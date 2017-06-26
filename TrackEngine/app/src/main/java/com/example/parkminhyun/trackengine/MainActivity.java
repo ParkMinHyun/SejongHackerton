@@ -1,9 +1,12 @@
 package com.example.parkminhyun.trackengine;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private List<Item> items;
     private RecyclerView rv;
     RVAdapter adapter;
+    Button registerStudyBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,5 +37,14 @@ public class MainActivity extends AppCompatActivity {
 
         adapter = new RVAdapter(items);
         rv.setAdapter(adapter);
+        registerStudyBtn = (Button)findViewById(R.id.registerStudyBtn);
+        registerStudyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent registerStudy = new Intent(MainActivity.this, RegisterStudyActivity.class);
+                startActivity(registerStudy);
+            }
+        });
+
     }
 }
