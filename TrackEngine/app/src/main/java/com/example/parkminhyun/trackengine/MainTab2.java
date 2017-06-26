@@ -43,7 +43,7 @@ public class MainTab2 extends Fragment {
         maps.add(new MapVO("9. 데이터사이언스 트랙", "데이터분석 개론", "비즈니스 인텔리전스", "데이터베이스", "컴퓨터 그래픽스", "기계학습", "", "데이터 시각화", "대용량데이터 처리개론", "텍스트 마이닝", "의사결정 모델링", "데이터기반 인공지능"));
         maps.add(new MapVO("10. 정보보호 트랙", "컴퓨터 네트워크", "보안 프로그래밍", "어셈블리어", "대칭키암호론", "운영체제", "공개키 암호론", "시스템 해킹과보안", "인터넷보안", "악성코드 분석", "네트워크 해킹과보안", "디지털 포렌식"));
 
-        adapter = new RVAdapterMap(maps);
+        adapter = new RVAdapterMap(maps, getActivity());
         rvMap.setAdapter(adapter);
 
         return inflatedView;

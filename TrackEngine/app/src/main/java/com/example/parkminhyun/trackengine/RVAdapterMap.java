@@ -1,5 +1,6 @@
 package com.example.parkminhyun.trackengine;
 
+import android.content.Context;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -18,6 +19,10 @@ public class RVAdapterMap extends RecyclerView.Adapter<RVAdapterMap.MapViewHolde
 
 
 public class MapViewHolder extends RecyclerView.ViewHolder {
+
+    private  UserStudyData userStudyData;
+    private List<String> userStudyList;
+
     CardView cv; // cardView
     TextView trackName;
     TextView tv1;
@@ -42,6 +47,7 @@ public class MapViewHolder extends RecyclerView.ViewHolder {
     ImageView iv9;
     ImageView iv10;
     ImageView iv11;
+
 
     public MapViewHolder(View itemView) {
         super(itemView);
@@ -69,13 +75,18 @@ public class MapViewHolder extends RecyclerView.ViewHolder {
         iv9 = (ImageView) itemView.findViewById(R.id.iv9_map_cv);
         iv10 = (ImageView) itemView.findViewById(R.id.iv10_map_cv);
         iv11 = (ImageView) itemView.findViewById(R.id.iv11_map_cv);
+
+        userStudyData = new UserStudyData(context);
+        userStudyList = userStudyData.loadStudyDataList();
     }
 }
-
-    public RVAdapterMap(List<MapVO> maps){
-        this.maps = maps;
-    }
+    Context context;
     List<MapVO> maps;
+    public RVAdapterMap(List<MapVO> maps, Context context){
+        this.maps = maps;
+        this.context = context;
+    }
+
 
     @Override
     public MapViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
