@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterStudyActivity"></activity>
+        <activity android:name=".RegisterStudyActivity" />
+        <activity android:name=".EngineerCertificationActivity" />
+        <activity android:name=".VirtualRealityActivity"></activity>
     </application>
 
 </manifest>

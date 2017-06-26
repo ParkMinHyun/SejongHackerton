@@ -1,6 +1,7 @@
 package com.example.parkminhyun.trackengine;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -22,13 +23,22 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ItemViewHolder> {
         public ItemViewHolder(View itemView) {
             super(itemView);
             cv = (CardView)itemView.findViewById(R.id.cv);
+            cv.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    ((AdapterCallback)mContext).startEachActivity(getPosition());
+                }
+            });
             name = (TextView)itemView.findViewById(R.id.item_name);
         }
     }
 
     List<Item> items;
+    Context mContext;
 
-    public RVAdapter(List<Item> items) {
+    public RVAdapter(Context context, List<Item> items)
+    {
+        this.mContext = context;
         this.items = items;
     }
 
@@ -54,4 +64,5 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ItemViewHolder> {
     public void onAttachedToRecyclerView(RecyclerView recyclerView){
         super.onAttachedToRecyclerView(recyclerView);
     }
+
 }
