@@ -1,6 +1,7 @@
 package com.example.parkminhyun.trackengine;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -19,9 +20,6 @@ public class RVAdapterMap extends RecyclerView.Adapter<RVAdapterMap.MapViewHolde
 
 
 public class MapViewHolder extends RecyclerView.ViewHolder {
-
-    private  UserStudyData userStudyData;
-    private List<String> userStudyList;
 
     CardView cv; // cardView
     TextView trackName;
@@ -75,16 +73,17 @@ public class MapViewHolder extends RecyclerView.ViewHolder {
         iv9 = (ImageView) itemView.findViewById(R.id.iv9_map_cv);
         iv10 = (ImageView) itemView.findViewById(R.id.iv10_map_cv);
         iv11 = (ImageView) itemView.findViewById(R.id.iv11_map_cv);
-
-        userStudyData = new UserStudyData(context);
-        userStudyList = userStudyData.loadStudyDataList();
     }
 }
     Context context;
     List<MapVO> maps;
+    private  UserStudyData userStudyData;
+    private List<String> userStudyList;
     public RVAdapterMap(List<MapVO> maps, Context context){
         this.maps = maps;
         this.context = context;
+        userStudyData = new UserStudyData(context);
+        this.userStudyList = userStudyData.loadStudyDataList();
     }
 
 
@@ -109,6 +108,73 @@ public class MapViewHolder extends RecyclerView.ViewHolder {
         holder.tv9.setText(maps.get(position).getSub8());
         holder.tv10.setText(maps.get(position).getSub9());
         holder.tv11.setText(maps.get(position).getSub10());
+
+        for(int i = 0; i < userStudyList.size(); i++){
+            if(userStudyList.get(i).equals(maps.get(position).getSub0())){
+                holder.tv1.setTextColor(Color.rgb(0, 255, 0));
+                holder.iv1.setImageResource(R.drawable.circle_green);
+            }
+        }
+        for(int i = 0; i < userStudyList.size(); i++){
+            if(userStudyList.get(i).equals(maps.get(position).getSub2())){
+                holder.tv2.setTextColor(Color.rgb(0, 255, 0));
+                holder.iv2.setImageResource(R.drawable.circle_green);
+            }
+        }
+        for(int i = 0; i < userStudyList.size(); i++){
+            if(userStudyList.get(i).equals(maps.get(position).getSub2())){
+                holder.tv3.setTextColor(Color.rgb(0, 255, 0));
+                holder.iv3.setImageResource(R.drawable.circle_green);
+            }
+        }
+        for(int i = 0; i < userStudyList.size(); i++){
+            if(userStudyList.get(i).equals(maps.get(position).getSub3())){
+                holder.tv4.setTextColor(Color.rgb(0, 255, 0));
+                holder.iv4.setImageResource(R.drawable.circle_green);
+            }
+        }
+        for(int i = 0; i < userStudyList.size(); i++){
+            if(userStudyList.get(i).equals(maps.get(position).getSub4())){
+                holder.tv5.setTextColor(Color.rgb(0, 255, 0));
+                holder.iv5.setImageResource(R.drawable.circle_green);
+            }
+        }
+        for(int i = 0; i < userStudyList.size(); i++){
+            if(userStudyList.get(i).equals(maps.get(position).getSub5())){
+                holder.tv6.setTextColor(Color.rgb(0, 255, 0));
+                holder.iv6.setImageResource(R.drawable.circle_green);
+            }
+        }
+        for(int i = 0; i < userStudyList.size(); i++){
+            if(userStudyList.get(i).equals(maps.get(position).getSub6())){
+                holder.tv7.setTextColor(Color.rgb(0, 255, 0));
+                holder.iv7.setImageResource(R.drawable.circle_green);
+            }
+        }
+        for(int i = 0; i < userStudyList.size(); i++){
+            if(userStudyList.get(i).equals(maps.get(position).getSub7())){
+                holder.tv8.setTextColor(Color.rgb(0, 255, 0));
+                holder.iv8.setImageResource(R.drawable.circle_green);
+            }
+        }
+        for(int i = 0; i < userStudyList.size(); i++){
+            if(userStudyList.get(i).equals(maps.get(position).getSub8())){
+                holder.tv9.setTextColor(Color.rgb(0, 255, 0));
+                holder.iv9.setImageResource(R.drawable.circle_green);
+            }
+        }
+        for(int i = 0; i < userStudyList.size(); i++){
+            if(userStudyList.get(i).equals(maps.get(position).getSub9())){
+                holder.tv10.setTextColor(Color.rgb(0, 255, 0));
+                holder.iv10.setImageResource(R.drawable.circle_green);
+            }
+        }
+        for(int i = 0; i < userStudyList.size(); i++){
+            if(userStudyList.get(i).equals(maps.get(position).getSub10())){
+                holder.tv11.setTextColor(Color.rgb(0, 255, 0));
+                holder.iv11.setImageResource(R.drawable.circle_green);
+            }
+        }
     }
 
     @Override
