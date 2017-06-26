@@ -15,7 +15,7 @@ public class AccreditInfoTab2_Hours extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        inflatedLayout = (LinearLayout) inflater.inflate(R.layout.tab3_major, container, false);
+        inflatedLayout = (LinearLayout) inflater.inflate(R.layout.tab_accredit, container, false);
         setContentWork();
         return inflatedLayout;
     }

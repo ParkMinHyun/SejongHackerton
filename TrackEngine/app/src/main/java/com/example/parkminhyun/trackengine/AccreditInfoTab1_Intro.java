@@ -1,28 +1,19 @@
 package com.example.parkminhyun.trackengine;
 
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.location.Location;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AlertDialog;
-import android.telephony.TelephonyManager;
-import android.util.Log;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Locale;
+import java.util.List;
 
 
 public class AccreditInfoTab1_Intro extends Fragment {
@@ -46,9 +37,35 @@ public class AccreditInfoTab1_Intro extends Fragment {
     //관광명소 주소 리스트
     private ArrayList<String> spotAddrList;
 
+    private List<Item> items;
+    private RecyclerView rv;
+    RVAdapter adapter;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        inflatedView = inflater.inflate(R.layout.tab1_liberalarts, container, false);
+        inflatedView = inflater.inflate(R.layout.tab_accredit, container, false);
+
+//        rv = (RecyclerView)findViewById(R.id.rv);
+//        LinearLayoutManager llm = new LinearLayoutManager(this);
+//        rv.setLayoutManager(llm);
+//        rv.setHasFixedSize(true);
+//
+//        items = new ArrayList<>();
+//
+//        items.add(new Item("가상현실 트랙"));
+//        items.add(new Item("인공지능 트랙"));
+//        items.add(new Item("응용SW 트랙"));
+//        items.add(new Item("HCI&VC 트랙"));
+//        items.add(new Item("멀티미디어 트랙"));
+//        items.add(new Item("사물인터넷 트랙"));
+//        items.add(new Item("시스템응용 트랙"));
+//        items.add(new Item("지능형인지 트랙"));
+//        items.add(new Item("데이터 사이언스 트랙"));
+//        items.add(new Item("정보보호 트랙"));
+//
+//
+//        adapter = new RVAdapter(items);
+//        rv.setAdapter(adapter);
 
         setContentView(spotName);
         return inflatedView;

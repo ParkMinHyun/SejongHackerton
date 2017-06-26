@@ -63,6 +63,8 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
 
         adapter = new RVAdapter(this, items);
         rv.setAdapter(adapter);
+
+
         registerStudyBtn = (Button)findViewById(R.id.registerStudyBtn);
         registerStudyBtn.setOnClickListener(new View.OnClickListener() {
             @Override

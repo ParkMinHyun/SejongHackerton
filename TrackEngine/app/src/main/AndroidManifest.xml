@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterStudyActivity"></activity>
-        <activity android:name=".AccreditInfoActivity"></activity>
+        <activity android:name=".AccreditInfoActivity" android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".EngineerCertificationActivity"></activity>
         <activity android:name=".VirtualRealityActivity"></activity>
     </application>

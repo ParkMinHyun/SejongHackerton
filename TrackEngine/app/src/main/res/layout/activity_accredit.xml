@@ -5,12 +5,92 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AccreditInfo">
+    >
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="200dp"
+        android:background="#00214E" >
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="10">
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전공교양"
+                android:textColor="#32909F"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14/14"
+                android:textColor="@color/white"
+                android:textSize="35sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BSM"
+                    android:textColor="#D5DB95"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/18"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전공"
+                    android:textColor="#E56A73"
+                    android:textSize="18dp" />
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="32/60"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(설계 6/12)"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
+
     <android.support.design.widget.TabLayout
         android:id="@+id/tab_layout"
         style="@style/AppTabLayout"
@@ -26,10 +106,9 @@
     <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
     <!--android:theme="@style/Theme.AppCompat.Light"/>-->
 
-
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:background="#123455" />
+        android:background="#00214E" />
 </LinearLayout>
