@@ -22,7 +22,7 @@ public class AccreditInfoTab3_Major extends Fragment {
     private RecyclerView rv;
     AccreditAdapter adapter;
     private List<String> subjects;
-    ExpandableListAdapter expandableListAdapter;
+    UserStudyData userStudyData;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -32,8 +32,8 @@ public class AccreditInfoTab3_Major extends Fragment {
                 "자료구조및실습","알고리즘및실습","컴퓨터구조론","운영체제","컴퓨터네트워크",
                 "웹프로그래밍","데이터베이스","네트워크프로그래밍","인공지능");
 
-        expandableListAdapter = new ExpandableListAdapter(getActivity());
-        List<String> userStudy = expandableListAdapter.loadStudyDataList();
+        userStudyData = new UserStudyData(getActivity());
+        List<String> userStudy = userStudyData.loadStudyDataList();
 
         items = new ArrayList<>();
 

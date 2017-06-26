@@ -28,7 +28,6 @@ public class MainTab1 extends Fragment implements AdapterCallback {
     public String spotName;
     private View inflatedView;
 
-    private ExpandableListAdapter expandableListAdapter;
     private List<String> userStudy;
     private List<Item> items;
     public static RecyclerView rv;

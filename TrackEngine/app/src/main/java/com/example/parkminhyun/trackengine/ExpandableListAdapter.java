@@ -26,6 +26,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter  {
     private List<String> _listDataHeader; // header titles
     // child data in format of header title, child title
     private HashMap<String, List<String>> _listDataChild;
+    private UserStudyData userStudyData;
 
     public ExpandableListAdapter(Context context) {
         this._context = context;
@@ -36,6 +37,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter  {
         this._context = context;
         this._listDataHeader = listDataHeader;
         this._listDataChild = listChildData;
+        this.userStudyData = new UserStudyData(_context);
         this.studyCheckList = new ArrayList<>();
     }
 
@@ -47,18 +49,6 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter  {
         for(int i=0; i< itemWords.length; i++){
             items.add(itemWords[i]);
         }
-    }
-
-    public List<String> loadStudyDataList(){
-        SharedPreferences settings = _context.getSharedPreferences("PREFS",0);
-        String wordsString = settings.getString("studyNameList","");
-        itemWords = wordsString.split(",");
-        items = new ArrayList<String>();
-        for(int i=0; i< itemWords.length; i++){
-            items.add(itemWords[i]);
-        }
-
-        return items;
     }
 
     public List<String> get_studyCheckList() {
