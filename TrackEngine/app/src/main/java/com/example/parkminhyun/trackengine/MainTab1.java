@@ -36,7 +36,7 @@ public class MainTab1 extends Fragment implements AdapterCallback {
     Button registerStudyBtn;
     private ImageView imageView;
     CardView cv_Engineer;
-
+    public static Context mContext;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

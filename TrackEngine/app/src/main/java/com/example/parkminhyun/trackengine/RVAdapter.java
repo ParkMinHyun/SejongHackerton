@@ -2,8 +2,10 @@ package com.example.parkminhyun.trackengine;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,7 +28,33 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ItemViewHolder> {
             cv.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    ((AdapterCallback)mContext).startEachActivity(getPosition());
+                    Log.i("onClick",String.valueOf(getPosition()));
+                    switch(getPosition())
+                    {
+                        case 0:
+                            mContext.startActivity(new Intent(mContext, VirtualRealityActivity.class));
+                            break;
+                        case 1:
+//                            startActivity(new Intent(Context, VirtualRealityActivity.class));
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                        case 4:
+                            break;
+                        case 5:
+                            break;
+                        case 6:
+                            break;
+                        case 7:
+                            break;
+                        case 8:
+                            break;
+                        case 9:
+                            break;
+                    }
+//                    ((AdapterCallback)mContext).startEachActivity(getPosition());
                 }
             });
             name = (TextView)itemView.findViewById(R.id.item_name);
