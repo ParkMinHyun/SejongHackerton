@@ -9,7 +9,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.ActionBar.Transparent">
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".RegisterStudyActivity" />
         <activity android:name=".SplashActivity"
                   android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
@@ -17,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterStudyActivity"></activity>
         <activity android:name=".AccreditInfoActivity" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".RegisterStudyActivity" android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".EngineerCertificationActivity"></activity>
         <activity android:name=".VirtualRealityActivity"></activity>
     </application>

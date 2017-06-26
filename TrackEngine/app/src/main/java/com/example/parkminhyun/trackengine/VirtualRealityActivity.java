@@ -6,8 +6,11 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 
 public class VirtualRealityActivity extends AppCompatActivity {
+
+    ImageView titleBarImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,9 @@ public class VirtualRealityActivity extends AppCompatActivity {
         setContentView(R.layout.activity_virtual_reality);
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.custom_bar);
+
+        titleBarImage = (ImageView)findViewById(R.id.imageView2);
+        titleBarImage.setImageResource(R.drawable.virtual_track_title);
     }
 
 
