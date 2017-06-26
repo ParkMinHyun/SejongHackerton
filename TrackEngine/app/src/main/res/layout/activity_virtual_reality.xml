@@ -6,13 +6,15 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context="com.example.parkminhyun.trackengine.VirtualRealityActivity"
-    android:background="@drawable/backgroundo">
+    android:background="@drawable/backgroundthr">
 
     <android.support.v7.widget.CardView
         android:id="@+id/cv_virtual_reality_track"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         app:cardCornerRadius="5dp">
 
         <RelativeLayout
@@ -284,14 +286,21 @@
             android:id="@+id/virtualRealitySubjectLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="50dp">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/trackengine_lowtitlebar"
-                android:layout_marginLeft="45dp"
-                android:layout_marginRight="45dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"/>
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/trackengine_lowtitlebar"-->
+                <!--android:layout_marginLeft="45dp"-->
+                <!--android:layout_marginRight="45dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginBottom="10dp"/>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:text="과목 미 이수표"/>
 
         </LinearLayout>
         <android.support.v7.widget.RecyclerView
