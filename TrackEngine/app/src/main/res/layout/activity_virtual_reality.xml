@@ -9,6 +9,7 @@
     android:background="@drawable/backgroundo">
 
     <android.support.v7.widget.CardView
+        android:id="@+id/cv_virtual_reality_track"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_margin="15dp"
@@ -272,4 +273,17 @@
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/cv_virtual_reality_track">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_subject">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
 </RelativeLayout>
