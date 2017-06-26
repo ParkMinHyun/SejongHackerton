@@ -14,8 +14,13 @@ import java.util.List;
 
 public class RegisterStudyActivity extends AppCompatActivity {
 
+    CalculateTrackCompleteNum calculateTrackCompleteNum;
     ExpandableListAdapter listAdapter;
     ExpandableListView expListView;
+    RVAdapter adapter;
+
+    private List<Item> items;
+    String[] itemStudys;
     List<String> listDataHeader;
     List<String> studyNameList;
     HashMap<String, List<String>> listDataChild;
@@ -39,7 +44,7 @@ public class RegisterStudyActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast toast = Toast.makeText(getApplicationContext(),"dd",Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(),"저장 완료되었습니다.",Toast.LENGTH_SHORT);
                 toast.show();
 
                 studyNameList = listAdapter.get_studyCheckList();
@@ -53,6 +58,33 @@ public class RegisterStudyActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = settings.edit();
                 editor.putString("studyNameList",stringBuilder.toString());
                 editor.commit();
+
+
+                //Save 후 Adapter 갱신
+                //
+                // user 선택한 과목에서 Track 이수학점 계산하기
+                calculateTrackCompleteNum = new CalculateTrackCompleteNum(getApplicationContext());
+                stringBuilder = calculateTrackCompleteNum.calculateTrackComplete();
+                String userStudys = stringBuilder.toString();
+                itemStudys = userStudys.split(",");
+
+                items = new ArrayList<>();
+                items.add(new Item("가상현실 트랙"));
+                items.add(new Item("인공지능 트랙"));
+                items.add(new Item("응용SW 트랙"));
+                items.add(new Item("HCI&VC 트랙"));
+                items.add(new Item("멀티미디어 트랙"));
+                items.add(new Item("사물인터넷 트랙"));
+                items.add(new Item("시스템응용 트랙"));
+                items.add(new Item("지능형인지 트랙"));
+                items.add(new Item("데이터 사이언스 트랙"));
+                items.add(new Item("정보보호 트랙"));
+
+                adapter = new RVAdapter(getApplicationContext(), items,itemStudys);
+                MainTab1.rv.setAdapter(adapter);
+
+                // 자동 종료
+                finish();
             }
         });
 
