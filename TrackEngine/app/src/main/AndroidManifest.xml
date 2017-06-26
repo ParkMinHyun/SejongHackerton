@@ -20,11 +20,10 @@
         </activity>
         <activity
             android:name=".AccreditInfoActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            />
         <activity
             android:name=".RegisterStudyActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".EngineerCertificationActivity" />
+           />
         <activity android:name=".VirtualRealityActivity" />
         <activity android:name=".ArtificialIntelligenceActivity" />
         <activity android:name=".ApplicationSWActivity" />

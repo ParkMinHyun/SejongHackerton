@@ -1,9 +1,13 @@
 package com.example.parkminhyun.trackengine;
 
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
@@ -30,8 +34,17 @@ public class RegisterStudyActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        makeTransParentStatusBar();
         super.onCreate(savedInstanceState);
+        try {
+            getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+            getSupportActionBar().setCustomView(R.layout.custom_bar);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         setContentView(R.layout.activity_register_study);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.custom_bar);
 
         saveBtn = (Button)findViewById(R.id.saveBtn);
         expListView = (ExpandableListView) findViewById(R.id.lvExp);
@@ -90,6 +103,13 @@ public class RegisterStudyActivity extends AppCompatActivity {
 
         // list Adapter 셋팅
         expListView.setAdapter(listAdapter);
+    }
+
+    public void makeTransParentStatusBar() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            Window w = getWindow(); // in Activity's onCreate() for instance
+            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        }
     }
 
     // list 아이템 셋팅

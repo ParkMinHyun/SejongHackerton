@@ -19,9 +19,7 @@
             android:layout_height="1dp"
             android:background="#FFFFFF"
             android:layout_marginTop="15dp">
-
         </LinearLayout>
-
     </RelativeLayout>
 
     <android.support.design.widget.TabLayout
