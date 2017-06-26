@@ -31,7 +31,7 @@ public class MainTab1 extends Fragment implements AdapterCallback {
     private ExpandableListAdapter expandableListAdapter;
     private List<String> userStudy;
     private List<Item> items;
-    private RecyclerView rv;
+    public static RecyclerView rv;
     RVAdapter adapter;
     Button registerStudyBtn;
     private ImageView imageView;
@@ -111,7 +111,6 @@ public class MainTab1 extends Fragment implements AdapterCallback {
                 break;
         }
     }
-
 
     public void setContentView(String spotName) {
 
