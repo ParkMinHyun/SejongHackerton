@@ -34,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
         items.add(new Item("안태현"));
         items.add(new Item("오성민"));
         items.add(new Item("이명호"));
+        items.add(new Item("박민현"));
+        items.add(new Item("안태현"));
+        items.add(new Item("오성민"));
+        items.add(new Item("이명호"));
+        items.add(new Item("오성민"));
+        items.add(new Item("이명호"));
+
 
         adapter = new RVAdapter(items);
         rv.setAdapter(adapter);
