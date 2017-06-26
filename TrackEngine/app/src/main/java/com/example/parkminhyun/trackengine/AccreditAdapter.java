@@ -2,8 +2,12 @@ package com.example.parkminhyun.trackengine;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,10 +24,57 @@ public class AccreditAdapter extends RecyclerView.Adapter<AccreditAdapter.ItemVi
     public class ItemViewHolder extends RecyclerView.ViewHolder{
         CardView cv; // cardView
         TextView name; // 아이템 이름
-        public ItemViewHolder(View itemView) {
+        Context mContext;
+
+        public ItemViewHolder(final View itemView) {
             super(itemView);
             cv = (CardView)itemView.findViewById(R.id.cv_accredit);
+
             name = (TextView)itemView.findViewById(R.id.accredit_name);
+            name.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.i("onClick",name.getText().toString());
+                    if(name.getText().equals("공업수학1"))
+                    {
+                        new AlertDialog.Builder(itemView.getContext()).setTitle("공학수학1")
+                                .setMessage("공학도가 기본적으로 습득해야 할 수학분야인 상미분방정식의 " +
+                                        "기본개념을 이해시키고 여러 형태의 상미분 방정식과 그에 관한 해법을" +
+                                        " 체계적으로 지도하여 다양한 공학분야의 전공과목 이수를 도울 뿐만 아니라, 수학적 소양과 과학적 사고 능력을 배양한다.")
+                                .setNeutralButton("닫기",new DialogInterface.OnClickListener(){
+                                    public void onClick(DialogInterface dig,int sumthin){
+                                    }
+                                }).show();
+                    }
+                    else if(name.getText().equals("컴퓨터네트워크"))
+                    {
+                        new AlertDialog.Builder(itemView.getContext()).setTitle("컴퓨터네트워크")
+                                .setMessage("컴퓨터 네트워크의 계층화된 구조를 알아보고 관련된 프로토콜과 라우팅 알고리즘들에 대해서 학습한다.")
+                                .setNeutralButton("닫기",new DialogInterface.OnClickListener(){
+                                    public void onClick(DialogInterface dig,int sumthin){
+                                    }
+                                }).show();
+                    }
+//                    switch(name.getText())
+//                    {
+//                        case "공업수학1":
+//                            mContext.startActivity(new Intent(mContext, VirtualRealityActivity.class));
+//                            break;
+//                        case 1:
+//                            mContext.startActivity(new Intent(mContext, ArtificialIntelligenceActivity.class));
+//                            break;
+//                        case 2:
+//                            mContext.startActivity(new Intent(mContext, ApplicationSWActivity.class));
+//                            break;
+//                        case 3:
+//                            mContext.startActivity(new Intent(mContext, HCIAndVCActivity.class));
+//                            break;
+//                        case 4:
+//                            mContext.startActivity(new Intent(mContext, MultiMediaActivity.class));
+//                            break;
+//                    ((AdapterCallback)mContext).startEachActivity(getPosition());
+                }
+            });
         }
     }
 
