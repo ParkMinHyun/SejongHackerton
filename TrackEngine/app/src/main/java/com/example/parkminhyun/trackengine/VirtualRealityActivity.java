@@ -76,25 +76,35 @@ public class VirtualRealityActivity extends AppCompatActivity {
         for(int i=0; i< userStudy.size(); i++){
             switch (userStudy.get(i).toString()){
                 case "멀티미디어 프로그래밍" :
-                    multiMediaProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    multiMediaProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    subjects.remove(0); break;
                 case "멀티미디어" :
-                    multiMediaImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    multiMediaImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    subjects.remove(1); break;
                 case "컴퓨터그래픽스" :
-                    computerGraphicsImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    computerGraphicsImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    subjects.remove(2); break;
                 case "게임 프로그래밍" :
-                    gameProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    gameProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    subjects.remove(3); break;
                 case "고급 실시간 그래픽스" :
-                    premiumRealTimeGraphicsImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    premiumRealTimeGraphicsImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    subjects.remove(4); break;
                 case "디지털 사운드" :
-                    digitalSoundImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    digitalSoundImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    subjects.remove(5); break;
                 case "가상현실" :
-                    virtualRealityImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    virtualRealityImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    subjects.remove(6); break;
                 case "컴퓨터 애니메이션" :
-                    computerAnimationImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    computerAnimationImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    subjects.remove(7); break;
                 case "증강현실" :
-                    augmentedRealityImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    augmentedRealityImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    subjects.remove(8); break;
                 case "HCI개론" :
-                    HCIIntroductionImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    HCIIntroductionImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    subjects.remove(9); break;
             }
         }
         adapter = new RVAdapterVirtualReality(this, subjects);
