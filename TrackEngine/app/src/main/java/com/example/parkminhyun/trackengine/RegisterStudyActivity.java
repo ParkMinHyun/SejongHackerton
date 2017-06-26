@@ -44,7 +44,7 @@ public class RegisterStudyActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast toast = Toast.makeText(getApplicationContext(),"dd",Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(),"저장 완료되었습니다.",Toast.LENGTH_SHORT);
                 toast.show();
 
                 studyNameList = listAdapter.get_studyCheckList();
@@ -60,6 +60,8 @@ public class RegisterStudyActivity extends AppCompatActivity {
                 editor.commit();
 
 
+                //Save 후 Adapter 갱신
+                //
                 // user 선택한 과목에서 Track 이수학점 계산하기
                 calculateTrackCompleteNum = new CalculateTrackCompleteNum(getApplicationContext());
                 stringBuilder = calculateTrackCompleteNum.calculateTrackComplete();
@@ -81,6 +83,8 @@ public class RegisterStudyActivity extends AppCompatActivity {
                 adapter = new RVAdapter(getApplicationContext(), items,itemStudys);
                 MainTab1.rv.setAdapter(adapter);
 
+                // 자동 종료
+                finish();
             }
         });
 

@@ -38,19 +38,29 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ItemViewHolder> {
                     switch(getPosition())
                     {
                         case 0:
-                            mContext.startActivity(new Intent(mContext, VirtualRealityActivity.class));
+                            Intent intent = new Intent(mContext, VirtualRealityActivity.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            mContext.startActivity(intent);
                             break;
                         case 1:
-                            mContext.startActivity(new Intent(mContext, ArtificialIntelligenceActivity.class));
+                            Intent intent2 = new Intent(mContext, ArtificialIntelligenceActivity.class);
+                            intent2.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            mContext.startActivity(intent2);
                             break;
                         case 2:
-                            mContext.startActivity(new Intent(mContext, ApplicationSWActivity.class));
+                            Intent intent3 = new Intent(mContext, ApplicationSWActivity.class);
+                            intent3.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            mContext.startActivity(intent3);
                             break;
                         case 3:
-                            mContext.startActivity(new Intent(mContext, HCIAndVCActivity.class));
+                            Intent intent4 = new Intent(mContext, HCIAndVCActivity.class);
+                            intent4.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            mContext.startActivity(intent4);
                             break;
                         case 4:
-                            mContext.startActivity(new Intent(mContext, MultiMediaActivity.class));
+                            Intent intent5 = new Intent(mContext, MultiMediaActivity.class);
+                            intent5.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            mContext.startActivity(intent5);
                             break;
                         case 5:
                             break;
