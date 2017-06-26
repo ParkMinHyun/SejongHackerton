@@ -21,7 +21,7 @@ public class ApplicationSWActivity extends AppCompatActivity {
     RVAdapterVirtualReality adapter;
     ExpandableListAdapter expandableListAdapter;
 
-    ImageView TroubleshootingAndPracticeImageView, multiMediaProgrammingImageView, windowProgrammingView,
+    ImageView TroubleshootingAndPracticeImageView, multiMediaProgrammingImageView, windowProgrammingImageView,
             mobileProgrammingImageView,webServerProgrammingImageView,digitalSoundImageView,imageProcessingImageView,
             computerVisionSystemImageView,VoiceProcessingSoftwareImageView;
 //
@@ -50,7 +50,7 @@ public class ApplicationSWActivity extends AppCompatActivity {
 
         multiMediaProgrammingImageView = (ImageView)findViewById(R.id.multiMediaProgrammingImageView);
         TroubleshootingAndPracticeImageView = (ImageView)findViewById(R.id.TroubleshootingAndPracticeImageView);
-        windowProgrammingView = (ImageView)findViewById(R.id.windowProgrammingView);
+        windowProgrammingImageView = (ImageView)findViewById(R.id.windowProgrammingImageView);
         mobileProgrammingImageView = (ImageView)findViewById(R.id.mobileProgrammingImageView);
         digitalSoundImageView = (ImageView)findViewById(R.id.digitalSoundImageView);
         webServerProgrammingImageView = (ImageView)findViewById(R.id.webServerProgrammingImageView);
@@ -73,7 +73,7 @@ public class ApplicationSWActivity extends AppCompatActivity {
 //                    multiMediaTextView.setTextColor(Color.BLACK);
 //                    subjects.remove(1); break;
                 case "윈도우즈 프로그래밍":
-                    windowProgrammingView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    windowProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
 //                    computerGraphicsTextView.setTextColor(Color.BLACK);
 //                    subjects.remove(2); break;
                 case "모바일 프로그래밍":
