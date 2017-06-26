@@ -4,15 +4,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="170dp"
+    android:layout_height="160dp"
     android:id="@+id/cv_map"
     android:layout_margin="5dp"
     app:cardElevation="0dp"
     app:cardMaxElevation="0dp">
+    <TextView
+        android:id="@+id/tv_track_map_cv"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:text="트랙명"
+        android:textSize="20sp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="130dp">
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -28,13 +38,13 @@
             android:id="@+id/iv1_map_cv"
             android:layout_width="8dp"
             android:layout_height="8dp"
-            android:layout_marginTop="22dp"
             android:adjustViewBounds="false"
             android:src="@drawable/circle_gray"
             tools:layout_editor_absoluteX="85dp"
             tools:layout_editor_absoluteY="51dp"
             android:layout_marginStart="11dp"
-            android:layout_below="@+id/tv_track_map_cv"
+            android:layout_marginBottom="27dp"
+            android:layout_above="@+id/iv6_map_cv"
             android:layout_toEndOf="@+id/textView6" />
 
         <TextView
@@ -48,12 +58,12 @@
         <TextView
             android:id="@+id/tv1_map_cv"
             android:layout_width="wrap_content"
-            android:layout_height="10dp"
+            android:layout_height="12dp"
             android:text="교과목명"
             android:textSize="8sp"
             tools:layout_editor_absoluteX="66dp"
             tools:layout_editor_absoluteY="60dp"
-            android:layout_below="@+id/iv1_map_cv"
+            android:layout_centerVertical="true"
             android:layout_alignStart="@+id/iv1_map_cv" />
 
         <ImageView
@@ -70,7 +80,7 @@
         <TextView
             android:id="@+id/tv2_map_cv"
             android:layout_width="wrap_content"
-            android:layout_height="10dp"
+            android:layout_height="12dp"
             android:text="교과목명"
             android:textSize="8sp"
             android:layout_above="@+id/iv2_map_cv"
@@ -90,7 +100,7 @@
         <TextView
             android:id="@+id/tv3_map_cv"
             android:layout_width="wrap_content"
-            android:layout_height="10dp"
+            android:layout_height="12dp"
             android:text="교과목명"
             android:textSize="8sp"
             android:layout_below="@+id/iv3_map_cv"
@@ -110,7 +120,7 @@
         <TextView
             android:id="@+id/tv4_map_cv"
             android:layout_width="wrap_content"
-            android:layout_height="10dp"
+            android:layout_height="12dp"
             android:text="교과목명"
             android:textSize="8sp"
             android:layout_above="@+id/iv4_map_cv"
@@ -130,11 +140,11 @@
         <TextView
             android:id="@+id/tv5_map_cv"
             android:layout_width="wrap_content"
-            android:layout_height="10dp"
+            android:layout_height="12dp"
             android:text="교과목명"
             android:textSize="8sp"
             android:layout_below="@+id/iv5_map_cv"
-            android:layout_alignEnd="@+id/iv5_map_cv" />
+            android:layout_alignStart="@+id/iv5_map_cv" />
 
         <ImageView
             android:id="@+id/iv6_map_cv"
@@ -143,17 +153,17 @@
             android:src="@drawable/circle_gray"
             tools:layout_editor_absoluteX="310dp"
             tools:layout_editor_absoluteY="78dp"
-            android:layout_marginEnd="18dp"
-            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_above="@+id/tv6_map_cv"
             android:layout_alignParentEnd="true" />
 
         <TextView
             android:id="@+id/tv6_map_cv"
             android:layout_width="wrap_content"
-            android:layout_height="10dp"
+            android:layout_height="12dp"
             android:text="교과목명"
             android:textSize="8sp"
-            android:layout_below="@+id/iv6_map_cv"
+            android:layout_alignBottom="@+id/textView6"
             android:layout_alignEnd="@+id/iv6_map_cv" />
 
         <ImageView
@@ -169,11 +179,11 @@
         <TextView
             android:id="@+id/tv7_map_cv"
             android:layout_width="wrap_content"
-            android:layout_height="10dp"
+            android:layout_height="12dp"
             android:text="교과목명"
             android:textSize="8sp"
             android:layout_below="@+id/iv7_map_cv"
-            android:layout_alignEnd="@+id/iv7_map_cv" />
+            android:layout_alignStart="@+id/iv7_map_cv" />
 
         <ImageView
             android:id="@+id/iv8_map_cv"
@@ -188,7 +198,7 @@
         <TextView
             android:id="@+id/tv8_map_cv"
             android:layout_width="wrap_content"
-            android:layout_height="10dp"
+            android:layout_height="12dp"
             android:text="교과목명"
             android:textSize="8sp"
             android:layout_above="@+id/iv8_map_cv"
@@ -207,7 +217,7 @@
         <TextView
             android:id="@+id/tv9_map_cv"
             android:layout_width="wrap_content"
-            android:layout_height="10dp"
+            android:layout_height="12dp"
             android:text="교과목명"
             android:textSize="8sp"
             android:layout_below="@+id/iv9_map_cv"
@@ -226,7 +236,7 @@
         <TextView
             android:id="@+id/tv10_map_cv"
             android:layout_width="wrap_content"
-            android:layout_height="10dp"
+            android:layout_height="12dp"
             android:text="교과목명"
             android:textSize="8sp"
             android:layout_above="@+id/iv10_map_cv"
@@ -240,13 +250,13 @@
             android:src="@drawable/circle_gray"
             tools:layout_editor_absoluteX="85dp"
             tools:layout_editor_absoluteY="107dp"
-            android:layout_below="@+id/textView6"
+            android:layout_above="@+id/textView"
             android:layout_alignStart="@+id/tv1_map_cv" />
 
         <TextView
             android:id="@+id/tv11_map_cv"
             android:layout_width="wrap_content"
-            android:layout_height="10dp"
+            android:layout_height="12dp"
             android:layout_alignStart="@+id/iv11_map_cv"
             android:layout_below="@+id/iv11_map_cv"
             android:text="교과목명"
@@ -266,14 +276,14 @@
             android:text="                 " />
 
         <TextView
-            android:id="@+id/tv_track_map_cv"
+            android:id="@+id/margine1"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="10dp"
-            android:text="트랙명"
+            android:text=""
             android:textSize="20sp" />
     </RelativeLayout>
 </android.support.v7.widget.CardView>
