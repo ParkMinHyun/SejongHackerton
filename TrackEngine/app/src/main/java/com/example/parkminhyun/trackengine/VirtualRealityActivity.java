@@ -39,7 +39,7 @@ public class VirtualRealityActivity extends AppCompatActivity {
         }
         setContentView(R.layout.activity_virtual_reality);
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.custom_bar);
+        getSupportActionBar().setCustomView(R.layout.custom_bar_text);
 
         multiMediaProgrammingImageView = (ImageView)findViewById(R.id.multiMediaProgrammingImageView);
         computerGraphicsImageView = (ImageView)findViewById(R.id.computerGraphicsImageView);
@@ -52,8 +52,8 @@ public class VirtualRealityActivity extends AppCompatActivity {
         augmentedRealityImageView = (ImageView)findViewById(R.id.augmentedRealityImageView);
         HCIIntroductionImageView = (ImageView)findViewById(R.id.HCIIntroductionImageView);
 
-        titleBarImage = (ImageView)findViewById(R.id.imageView2);
-        titleBarImage.setImageResource(R.drawable.virtual_track_title);
+//        titleBarImage = (ImageView)findViewById(R.id.imageView2);
+//        titleBarImage.setImageResource(0);
         rvSubject = (RecyclerView) findViewById(R.id.rv_subject);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         rvSubject.setLayoutManager(llm);
