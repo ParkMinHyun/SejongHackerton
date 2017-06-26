@@ -35,9 +35,10 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ItemViewHolder> {
                             mContext.startActivity(new Intent(mContext, VirtualRealityActivity.class));
                             break;
                         case 1:
-//                            startActivity(new Intent(Context, VirtualRealityActivity.class));
+                            mContext.startActivity(new Intent(mContext, ArtificialIntelligenceActivity.class));
                             break;
                         case 2:
+                            mContext.startActivity(new Intent(mContext, ApplicationSWActivity.class));
                             break;
                         case 3:
                             break;
