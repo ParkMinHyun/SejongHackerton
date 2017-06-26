@@ -4,13 +4,252 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundt"
     tools:context="com.example.parkminhyun.trackengine.ArtificialIntelligenceActivity">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        app:cardCornerRadius="5dp"
-        android:layout_margin="15dp">
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/firstLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/multiMediaProgrammingImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/multiMediaProgrammingImageView"
+                        android:gravity="center"
+                        android:text="멀티미디어\n프로그래밍"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ArtificialIntelligenceImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/ArtificialIntelligenceImageView"
+                        android:gravity="center"
+                        android:text="인공지능"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/dataBaseProgrammingImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/dataBaseProgrammingImageView"
+                        android:gravity="center"
+                        android:text="데이터베이스\n프로그래밍"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secondLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/firstLinearLayout"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/dataAnalysisImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/dataAnalysisImageView"
+                        android:gravity="center"
+                        android:text="데이터 분석"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/machineLearningImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/machineLearningImageView"
+                        android:gravity="center"
+                        android:text="기계학습"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageProcessingImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/imageProcessingImageView"
+                        android:gravity="center"
+                        android:text="영상처리"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thirdLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/secondLinearLayout"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/patternRecognitionImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/patternRecognitionImageView"
+                        android:gravity="center"
+                        android:text="패턴인식"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/computerVisionSystemImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/computerVisionSystemImageView"
+                        android:gravity="center"
+                        android:text="컴퓨터\n비전 시스템"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/intelligentSystemImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/intelligentSystemImageView"
+                        android:gravity="center"
+                        android:text="지능형 시스템"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
 
 
     </android.support.v7.widget.CardView>
