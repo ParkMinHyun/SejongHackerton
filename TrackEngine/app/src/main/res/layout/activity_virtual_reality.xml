@@ -37,7 +37,7 @@
                         android:layout_height="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
-                        android:background="#3498DB"/>
+                        android:background="#BDBDBD"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -52,7 +52,7 @@
                             android:id="@+id/multiMediaProgrammingTextView"
                             android:layout_below="@id/multiMediaProgrammingImageView"
                             android:textSize="18dp"
-                            android:textColor="#000000"
+                            android:textColor="#BDBDBD"
                             android:gravity="center"
                             android:text="멀티미디어\n프로그래밍"/>
 
