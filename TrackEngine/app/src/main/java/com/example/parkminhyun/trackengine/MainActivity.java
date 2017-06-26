@@ -1,9 +1,7 @@
 package com.example.parkminhyun.trackengine;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Build;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -109,6 +107,9 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
         switch(position){ // SW융합대학 트랙 별 이수체제도 하위 아이템 position을 읽어서 해당 포지션에 매칭되는 activity 실행
             case 0:
                 startActivity(new Intent(MainActivity.this, VirtualRealityActivity.class));
+                break;
+            case 1:
+                startActivity(new Intent(MainActivity.this, MainTest.class));
                 break;
             default:
                 break;
