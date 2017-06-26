@@ -49,6 +49,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="65dp"
+                            android:id="@+id/multiMediaProgrammingTextView"
                             android:layout_below="@id/multiMediaProgrammingImageView"
                             android:textSize="18dp"
                             android:textColor="#000000"
@@ -78,7 +79,7 @@
                         android:layout_marginRight="5dp">
 
                         <TextView
-                            android:id="@+id/textView"
+                            android:id="@+id/computerGraphicsTextView"
                             android:layout_width="match_parent"
                             android:layout_height="65dp"
                             android:layout_below="@id/computerGraphicsImageView"
@@ -112,6 +113,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="65dp"
+                            android:id="@+id/premiumRealTimeGraphicsTextView"
                             android:layout_below="@id/premiumRealTimeGraphicsImageView"
                             android:textColor="#BDBDBD"
                             android:textSize="18dp"
@@ -152,6 +154,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="65dp"
+                            android:id="@+id/multiMediaTextView"
                             android:layout_below="@id/multiMediaImageView"
                             android:textColor="#BDBDBD"
                             android:textSize="18dp"
@@ -183,6 +186,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="65dp"
+                            android:id="@+id/gameProgrammingTextView"
                             android:layout_below="@id/gameProgrammingImageView"
                             android:textColor="#BDBDBD"
                             android:textSize="18dp"
@@ -215,6 +219,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="65dp"
+                            android:id="@+id/digitalSoundTextView"
                             android:layout_below="@id/digitalSoundImageView"
                             android:textColor="#BDBDBD"
                             android:gravity="center"
@@ -253,6 +258,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="65dp"
+                            android:id="@+id/virtualRealityTextView"
                             android:layout_below="@id/virtualRealityImageView"
                             android:textColor="#BDBDBD"
                             android:textSize="18dp"
@@ -283,6 +289,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="65dp"
+                            android:id="@+id/computerAnimationTextView"
                             android:layout_below="@id/computerAnimationImageView"
                             android:textColor="#BDBDBD"
                             android:textSize="18dp"
@@ -313,6 +320,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="65dp"
+                            android:id="@+id/augmentedRealityTextView"
                             android:layout_below="@id/augmentedRealityImageView"
                             android:textColor="#BDBDBD"
                             android:textSize="18dp"
@@ -351,6 +359,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="65dp"
+                            android:id="@+id/HCIIntroductionTextView"
                             android:layout_below="@id/HCIIntroductionImageView"
                             android:textColor="#BDBDBD"
                             android:textSize="18dp"
