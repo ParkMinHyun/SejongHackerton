@@ -5,12 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.parkminhyun.trackengine.MainActivity"
+    android:fitsSystemWindows="true">
     android:background="@drawable/background">
     
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:id="@+id/introduceRelativeLayout"></RelativeLayout>
+        android:id="@+id/introduceRelativeLayout">
+
+    </RelativeLayout>
+
 
     <TextView
         android:layout_width="match_parent"
