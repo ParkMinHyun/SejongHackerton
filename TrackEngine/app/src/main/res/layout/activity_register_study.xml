@@ -8,12 +8,13 @@
     <ExpandableListView
         android:id="@+id/lvExp"
         android:layout_gravity="left"
-        android:layout_height="520dp"
+        android:layout_height="780dp"
         android:layout_width="match_parent"/>
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/saveBtn"
@@ -23,7 +24,7 @@
             android:textColor="@color/black"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="0dp"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </RelativeLayout>
 </LinearLayout>

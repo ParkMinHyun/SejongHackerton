@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context="com.example.parkminhyun.trackengine.VirtualRealityActivity"
-    android:background="@drawable/backgroundthr">
+    android:background="@drawable/background">
 
     <android.support.v7.widget.CardView
         android:id="@+id/cv_virtual_reality_track"
@@ -33,20 +33,29 @@
                     android:orientation="vertical">
                     <ImageView
                         android:id="@+id/multiMediaProgrammingImageView"
-                        android:layout_width="100dp"
+                        android:layout_width="110dp"
                         android:layout_height="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
-                        android:background="#BDBDBD"/>
+                        android:background="#3498DB"/>
 
-                    <TextView
-                        android:layout_width="125dp"
-                        android:layout_height="75dp"
-                        android:layout_below="@id/multiMediaProgrammingImageView"
-                        android:textSize="18dp"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:text="멀티미디어\n프로그래밍"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:background="#EEEEEE"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_below="@id/multiMediaProgrammingImageView"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:text="멀티미디어\n프로그래밍"/>
+
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -55,21 +64,30 @@
                     android:orientation="vertical">
                     <ImageView
                         android:id="@+id/computerGraphicsImageView"
-                        android:layout_width="100dp"
+                        android:layout_width="110dp"
                         android:layout_height="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
                         android:background="#BDBDBD"/>
 
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="125dp"
-                        android:layout_height="75dp"
-                        android:layout_below="@id/computerGraphicsImageView"
-                        android:gravity="center"
-                        android:text="컴퓨터\n그래픽스"
-                        android:textSize="18dp"
-                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:background="#EEEEEE"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_below="@id/computerGraphicsImageView"
+                            android:textColor="#BDBDBD"
+                            android:gravity="center"
+                            android:text="컴퓨터\n그래픽스"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -84,14 +102,23 @@
                         android:layout_marginLeft="10dp"
                         android:background="#BDBDBD"/>
 
-                    <TextView
-                        android:layout_width="125dp"
-                        android:layout_height="75dp"
-                        android:layout_below="@id/premiumRealTimeGraphicsImageView"
-                        android:textSize="18dp"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:text="고급 실시간\n그래픽스"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:background="#EEEEEE"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_below="@id/premiumRealTimeGraphicsImageView"
+                            android:textColor="#BDBDBD"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:text="고급 실시간\n그래픽스"/>
+
+                    </LinearLayout>
                 </LinearLayout>
 
             </LinearLayout>
@@ -109,20 +136,29 @@
 
                     <ImageView
                         android:id="@+id/multiMediaImageView"
-                        android:layout_width="100dp"
+                        android:layout_width="110dp"
                         android:layout_height="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
                         android:background="#BDBDBD"/>
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="75dp"
-                        android:layout_below="@id/multiMediaImageView"
-                        android:textSize="18dp"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:text="멀티미디어"/>
+                        android:layout_height="65dp"
+                        android:background="#EEEEEE"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_below="@id/multiMediaImageView"
+                            android:textColor="#BDBDBD"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:text="멀티미디어"/>
+
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -131,42 +167,60 @@
                     android:orientation="vertical">
                     <ImageView
                         android:id="@+id/gameProgrammingImageView"
-                        android:layout_width="100dp"
+                        android:layout_width="110dp"
                         android:layout_height="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
                         android:background="#BDBDBD"/>
 
-                    <TextView
-                        android:layout_width="125dp"
-                        android:layout_height="75dp"
-                        android:layout_below="@id/gameProgrammingImageView"
-                        android:textSize="18dp"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:text="게임\n프로그래밍"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:background="#EEEEEE"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_below="@id/gameProgrammingImageView"
+                            android:textColor="#BDBDBD"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:text="게임\n프로그래밍"/>
+
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="125dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
                     <ImageView
                         android:id="@+id/digitalSoundImageView"
                         android:layout_width="100dp"
                         android:layout_height="15dp"
-                        android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
-                        android:background="#BDBDBD"/>
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
 
-                    <TextView
-                        android:layout_width="125dp"
-                        android:layout_height="75dp"
-                        android:layout_below="@id/digitalSoundImageView"
-                        android:textSize="18dp"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:text="디지털\n사운드"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:background="#EEEEEE"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_below="@id/digitalSoundImageView"
+                            android:textColor="#BDBDBD"
+                            android:gravity="center"
+                            android:text="디지털\n사운드"
+                            android:textSize="18dp"/>
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -183,20 +237,28 @@
                     android:orientation="vertical">
                     <ImageView
                         android:id="@+id/virtualRealityImageView"
-                        android:layout_width="100dp"
+                        android:layout_width="110dp"
                         android:layout_height="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
                         android:background="#BDBDBD"/>
 
-                    <TextView
-                        android:layout_width="125dp"
-                        android:layout_height="75dp"
-                        android:layout_below="@id/virtualRealityImageView"
-                        android:textSize="18dp"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:text="가상현실"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:background="#EEEEEE"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_below="@id/virtualRealityImageView"
+                            android:textColor="#BDBDBD"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:text="가상현실"/>
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -205,20 +267,28 @@
                     android:orientation="vertical">
                     <ImageView
                         android:id="@+id/computerAnimationImageView"
-                        android:layout_width="100dp"
+                        android:layout_width="110dp"
                         android:layout_height="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
                         android:background="#BDBDBD"/>
 
-                    <TextView
-                        android:layout_width="125dp"
-                        android:layout_height="75dp"
-                        android:layout_below="@id/computerAnimationImageView"
-                        android:textSize="18dp"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:text="컴퓨터\n애니메이션"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:background="#EEEEEE"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_below="@id/computerAnimationImageView"
+                            android:textColor="#BDBDBD"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:text="컴퓨터\n애니메이션"/>
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -233,14 +303,22 @@
                         android:layout_marginLeft="10dp"
                         android:background="#BDBDBD"/>
 
-                    <TextView
-                        android:layout_width="125dp"
-                        android:layout_height="75dp"
-                        android:layout_below="@id/augmentedRealityImageView"
-                        android:textSize="18dp"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:text="증강현실"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:background="#EEEEEE"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_below="@id/augmentedRealityImageView"
+                            android:textColor="#BDBDBD"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:text="증강현실"/>
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -257,20 +335,28 @@
                     android:orientation="vertical">
                     <ImageView
                         android:id="@+id/HCIIntroductionImageView"
-                        android:layout_width="100dp"
+                        android:layout_width="110dp"
                         android:layout_height="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
                         android:background="#BDBDBD"/>
 
-                    <TextView
-                        android:layout_width="125dp"
-                        android:layout_height="75dp"
-                        android:layout_below="@id/HCIIntroductionImageView"
-                        android:textSize="18dp"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:text="HCI개론"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:background="#EEEEEE"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_below="@id/HCIIntroductionImageView"
+                            android:textColor="#BDBDBD"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:text="HCI개론"/>
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -286,14 +372,6 @@
             android:id="@+id/virtualRealitySubjectLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="50dp">
-            <!--<ImageView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:background="@drawable/trackengine_lowtitlebar"-->
-                <!--android:layout_marginLeft="45dp"-->
-                <!--android:layout_marginRight="45dp"-->
-                <!--android:layout_marginTop="10dp"-->
-                <!--android:layout_marginBottom="10dp"/>-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
