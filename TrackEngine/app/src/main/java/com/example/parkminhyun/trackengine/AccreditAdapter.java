@@ -23,7 +23,6 @@ public class AccreditAdapter extends RecyclerView.Adapter<AccreditAdapter.ItemVi
         public ItemViewHolder(View itemView) {
             super(itemView);
             cv = (CardView)itemView.findViewById(R.id.cv_accredit);
-
             name = (TextView)itemView.findViewById(R.id.accredit_name);
         }
     }
