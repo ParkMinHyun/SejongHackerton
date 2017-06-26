@@ -2,10 +2,12 @@ package com.example.parkminhyun.trackengine;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -23,12 +25,13 @@ public class AccreditInfoActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accredit);
-        mContextTourInfo = this;
-        getActivity = this;
-        // 현재 활성화된 액티비티를 시작하게 한 인텐트 호출
-        Intent intent = getIntent();
-        spotName=intent.getStringExtra("관광명소");
-        Log.d("test", "temp"+spotName);
+
+        new AlertDialog.Builder(this).setTitle("주의!")
+                .setMessage("공학설계인증은 '공학설계기초' ~ '캡스톤디자인프로젝트' 사이에 이수한 과목만 인정됩니다. 자세한 설명은 공학인증 홈페이지를 참조하세요.")
+                .setNeutralButton("닫기",new DialogInterface.OnClickListener(){
+                    public void onClick(DialogInterface dig,int sumthin){
+                    }
+                }).show();
 
         //탭 레이아웃
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);

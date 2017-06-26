@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.example.parkminhyun.trackengine.AccreditInfoActivity.mContextTourInfo;
+import static java.lang.System.in;
 
 
 public class AccreditInfoTab1_LiberalArts extends Fragment {
@@ -43,14 +45,28 @@ public class AccreditInfoTab1_LiberalArts extends Fragment {
     private List<Item> items;
     private RecyclerView rv;
     AccreditAdapter adapter;
+    private List<Subject> subjects;
+    ExpandableListAdapter expandableListAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         inflatedView = inflater.inflate(R.layout.accredit_tab, container, false);
 
+        subjects = new ArrayList<>();
+        expandableListAdapter = new ExpandableListAdapter(getActivity());
+        List<String> userStudy = expandableListAdapter.loadStudyDataList();
+
         items = new ArrayList<>();
 //        items.add(new Item("확률통계및프로그래밍"));
 //        items.add(new Item("선형대수및프로그래밍"));
+        for(int i=0; i< userStudy.size(); i++) {
+            Log.i("userStudy",userStudy.get(i).toString());
+            items.add(new Item(userStudy.get(i).toString()));
+        }
+
+
+
+
 
         rv = (RecyclerView) inflatedView.findViewById(R.id.accredit_rv);
         rv.setHasFixedSize(true);
