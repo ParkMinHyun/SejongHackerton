@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:id="@+id/cv_map"
+    android:layout_margin="5dp"
+    app:cardElevation="0dp"
+    app:cardMaxElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitEnd"
+            android:src="@drawable/mapbackground" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv1_map_cv"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="22dp"
+            android:adjustViewBounds="false"
+            android:src="@drawable/circle_gray"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="51dp"
+            android:layout_marginStart="11dp"
+            android:layout_below="@+id/tv_track_map_cv"
+            android:layout_toEndOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/margin"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:textSize="10sp"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="60dp" />
+
+        <TextView
+            android:id="@+id/tv1_map_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:text="교과목명"
+            android:textSize="8sp"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="60dp"
+            android:layout_below="@+id/iv1_map_cv"
+            android:layout_alignStart="@+id/iv1_map_cv" />
+
+        <ImageView
+            android:id="@+id/iv2_map_cv"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="51dp"
+            android:src="@drawable/circle_gray"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="51dp"
+            android:layout_alignTop="@+id/iv1_map_cv"
+            android:layout_toEndOf="@+id/iv1_map_cv" />
+
+        <TextView
+            android:id="@+id/tv2_map_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:text="교과목명"
+            android:textSize="8sp"
+            android:layout_above="@+id/iv2_map_cv"
+            android:layout_alignStart="@+id/iv2_map_cv" />
+
+        <ImageView
+            android:id="@+id/iv3_map_cv"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/circle_gray"
+            tools:layout_editor_absoluteX="175dp"
+            tools:layout_editor_absoluteY="51dp"
+            android:layout_alignTop="@+id/iv2_map_cv"
+            android:layout_toEndOf="@+id/iv2_map_cv"
+            android:layout_marginStart="52dp" />
+
+        <TextView
+            android:id="@+id/tv3_map_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:text="교과목명"
+            android:textSize="8sp"
+            android:layout_below="@+id/iv3_map_cv"
+            android:layout_alignStart="@+id/iv3_map_cv" />
+
+        <ImageView
+            android:id="@+id/iv4_map_cv"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="55dp"
+            android:src="@drawable/circle_gray"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="51dp"
+            android:layout_alignTop="@+id/iv3_map_cv"
+            android:layout_toEndOf="@+id/iv3_map_cv" />
+
+        <TextView
+            android:id="@+id/tv4_map_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:text="교과목명"
+            android:textSize="8sp"
+            android:layout_above="@+id/iv4_map_cv"
+            android:layout_alignStart="@+id/iv4_map_cv" />
+
+        <ImageView
+            android:id="@+id/iv5_map_cv"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/circle_gray"
+            tools:layout_editor_absoluteX="265dp"
+            tools:layout_editor_absoluteY="51dp"
+            android:layout_alignTop="@+id/iv4_map_cv"
+            android:layout_toEndOf="@+id/iv4_map_cv"
+            android:layout_marginStart="52dp" />
+
+        <TextView
+            android:id="@+id/tv5_map_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:text="교과목명"
+            android:textSize="8sp"
+            android:layout_below="@+id/iv5_map_cv"
+            android:layout_alignEnd="@+id/iv5_map_cv" />
+
+        <ImageView
+            android:id="@+id/iv6_map_cv"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/circle_gray"
+            tools:layout_editor_absoluteX="310dp"
+            tools:layout_editor_absoluteY="78dp"
+            android:layout_marginEnd="18dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/tv6_map_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:text="교과목명"
+            android:textSize="8sp"
+            android:layout_below="@+id/iv6_map_cv"
+            android:layout_alignEnd="@+id/iv6_map_cv" />
+
+        <ImageView
+            android:id="@+id/iv7_map_cv"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/circle_gray"
+            tools:layout_editor_absoluteX="265dp"
+            tools:layout_editor_absoluteY="107dp"
+            android:layout_alignTop="@+id/iv8_map_cv"
+            android:layout_alignStart="@+id/iv5_map_cv" />
+
+        <TextView
+            android:id="@+id/tv7_map_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:text="교과목명"
+            android:textSize="8sp"
+            android:layout_below="@+id/iv7_map_cv"
+            android:layout_alignEnd="@+id/iv7_map_cv" />
+
+        <ImageView
+            android:id="@+id/iv8_map_cv"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/circle_gray"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="107dp"
+            android:layout_alignTop="@+id/iv11_map_cv"
+            android:layout_alignStart="@+id/iv4_map_cv" />
+
+        <TextView
+            android:id="@+id/tv8_map_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:text="교과목명"
+            android:textSize="8sp"
+            android:layout_above="@+id/iv8_map_cv"
+            android:layout_alignStart="@+id/iv8_map_cv" />
+
+        <ImageView
+            android:id="@+id/iv9_map_cv"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/circle_gray"
+            tools:layout_editor_absoluteX="175dp"
+            tools:layout_editor_absoluteY="107dp"
+            android:layout_alignTop="@+id/iv10_map_cv"
+            android:layout_alignStart="@+id/iv3_map_cv" />
+
+        <TextView
+            android:id="@+id/tv9_map_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:text="교과목명"
+            android:textSize="8sp"
+            android:layout_below="@+id/iv9_map_cv"
+            android:layout_alignStart="@+id/iv9_map_cv" />
+
+        <ImageView
+            android:id="@+id/iv10_map_cv"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/circle_gray"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="107dp"
+            android:layout_alignTop="@+id/iv11_map_cv"
+            android:layout_alignStart="@+id/iv2_map_cv" />
+
+        <TextView
+            android:id="@+id/tv10_map_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:text="교과목명"
+            android:textSize="8sp"
+            android:layout_above="@+id/iv10_map_cv"
+            android:layout_alignStart="@+id/iv10_map_cv" />
+
+        <ImageView
+            android:id="@+id/iv11_map_cv"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:adjustViewBounds="false"
+            android:src="@drawable/circle_gray"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="107dp"
+            android:layout_below="@+id/textView6"
+            android:layout_alignStart="@+id/tv1_map_cv" />
+
+        <TextView
+            android:id="@+id/tv11_map_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_alignStart="@+id/iv11_map_cv"
+            android:layout_below="@+id/iv11_map_cv"
+            android:text="교과목명"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/tv1_map_cv" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="116dp"
+            android:text="                 " />
+
+        <TextView
+            android:id="@+id/tv_track_map_cv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:text="트랙명"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
