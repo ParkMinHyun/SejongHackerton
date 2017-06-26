@@ -24,12 +24,12 @@
         <activity
             android:name=".RegisterStudyActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".EngineerCertificationActivity" />
         <activity android:name=".VirtualRealityActivity" />
         <activity android:name=".ArtificialIntelligenceActivity" />
         <activity android:name=".ApplicationSWActivity" />
         <activity android:name=".HCIAndVCActivity" />
         <activity android:name=".MultiMediaActivity"></activity>
+        <activity android:name=".MainTest"></activity>
     </application>
 
 </manifest>
