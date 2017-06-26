@@ -42,7 +42,7 @@ public class RegisterStudyActivity extends AppCompatActivity {
                 Toast toast = Toast.makeText(getApplicationContext(),"dd",Toast.LENGTH_SHORT);
                 toast.show();
 
-                studyNameList = listAdapter.get_lstudyCheckList();
+                studyNameList = listAdapter.get_studyCheckList();
 
                 StringBuilder stringBuilder = new StringBuilder();
                 for(String s : studyNameList){
