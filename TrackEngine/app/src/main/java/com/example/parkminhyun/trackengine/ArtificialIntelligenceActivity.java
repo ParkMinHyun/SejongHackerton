@@ -25,6 +25,8 @@ public class ArtificialIntelligenceActivity extends AppCompatActivity {
             dataAnalysisTextView,machineLearningTextView,imageProcessingTextView,patternRecognitionTextView,
             computerVisionSystemTextView,intelligentSystemTextView;
 
+    TextView customBarTextView;
+
     ImageView titleBarImage;
 
     private List<Subject> subjects;
@@ -45,10 +47,10 @@ public class ArtificialIntelligenceActivity extends AppCompatActivity {
         }
         setContentView(R.layout.activity_artificial_intelligence);
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.custom_bar);
+        getSupportActionBar().setCustomView(R.layout.custom_bar_text);
 
-        titleBarImage = (ImageView)findViewById(R.id.imageView2);
-        titleBarImage.setImageResource(R.drawable.artificial_intelligence);
+//        titleBarImage = (ImageView)findViewById(R.id.imageView2);
+//        titleBarImage.setImageResource(R.drawable.artificial_intelligence);
 
         rvSubject = (RecyclerView) findViewById(R.id.rv_subject);
         LinearLayoutManager llm = new LinearLayoutManager(this);
@@ -74,6 +76,9 @@ public class ArtificialIntelligenceActivity extends AppCompatActivity {
         patternRecognitionTextView = (TextView)findViewById(R.id.patternRecognitionTextView);
         computerVisionSystemTextView = (TextView)findViewById(R.id.computerVisionSystemTextView);
         intelligentSystemTextView = (TextView)findViewById(R.id.intelligentSystemTextView);
+
+        customBarTextView = (TextView)findViewById(R.id.customTextView);
+        customBarTextView.setText("인공지능 트랙 이수표");
 
         subjects = new ArrayList<>();
         userStudyData = new UserStudyData(this);

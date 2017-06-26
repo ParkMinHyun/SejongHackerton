@@ -12,6 +12,8 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,6 +33,8 @@ public class ApplicationSWActivity extends AppCompatActivity {
             mobileProgrammingTextView,webServerProgrammingTextView,digitalSoundTextView,imageProcessingTextView,
             computerVisionSystemTextView,VoiceProcessingSoftwareTextView;
 
+    TextView customBarTextView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,10 +48,10 @@ public class ApplicationSWActivity extends AppCompatActivity {
         }
         setContentView(R.layout.activity_application_sw);
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.custom_bar);
+        getSupportActionBar().setCustomView(R.layout.custom_bar_text);
 
-        titleBarImage = (ImageView)findViewById(R.id.imageView2);
-        titleBarImage.setImageResource(R.drawable.application_sw_title);
+//        titleBarImage = (ImageView)findViewById(R.id.imageView2);
+//        titleBarImage.setImageResource(R.drawable.application_sw_title);
 
 
         multiMediaProgrammingImageView = (ImageView)findViewById(R.id.multiMediaProgrammingImageView);
@@ -69,11 +73,13 @@ public class ApplicationSWActivity extends AppCompatActivity {
         imageProcessingTextView = (TextView)findViewById(R.id.imageProcessingTextView);
         computerVisionSystemTextView = (TextView)findViewById(R.id.computerVisionSystemTextView);
         VoiceProcessingSoftwareTextView = (TextView)findViewById(R.id.VoiceProcessingSoftwareTextView);
-
+        
         rvSubject = (RecyclerView) findViewById(R.id.rv_subject);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         rvSubject.setLayoutManager(llm);
         rvSubject.setHasFixedSize(true);
+        customBarTextView = (TextView)findViewById(R.id.customTextView);
+        customBarTextView.setText("응용 소프트웨어 트랙 이수표");
 
         subjects = new ArrayList<>();
         userStudyData = new UserStudyData(this);
