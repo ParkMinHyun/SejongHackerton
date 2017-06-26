@@ -73,7 +73,7 @@ public class ApplicationSWActivity extends AppCompatActivity {
         imageProcessingTextView = (TextView)findViewById(R.id.imageProcessingTextView);
         computerVisionSystemTextView = (TextView)findViewById(R.id.computerVisionSystemTextView);
         VoiceProcessingSoftwareTextView = (TextView)findViewById(R.id.VoiceProcessingSoftwareTextView);
-        
+
         rvSubject = (RecyclerView) findViewById(R.id.rv_subject);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         rvSubject.setLayoutManager(llm);

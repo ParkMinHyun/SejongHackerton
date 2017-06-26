@@ -293,8 +293,8 @@
 
                         <TextView
                             android:id="@+id/computerVisionSystemTextView"
-                            android:layout_width="125dp"
-                            android:layout_height="75dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
                             android:layout_below="@id/computerVisionSystemImageView"
                             android:gravity="center"
                             android:textColor="#BDBDBD"
