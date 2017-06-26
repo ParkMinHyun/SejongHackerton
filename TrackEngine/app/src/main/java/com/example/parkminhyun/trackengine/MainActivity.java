@@ -1,9 +1,7 @@
 package com.example.parkminhyun.trackengine;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Build;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -21,6 +19,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements AdapterCallback {
 
+    private ExpandableListAdapter expandableListAdapter;
+    private List<String> userStudy;
     private List<Item> items;
     private RecyclerView rv;
     RVAdapter adapter;
@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
     protected void onCreate(Bundle savedInstanceState) {
         makeTransParentStatusBar();
         super.onCreate(savedInstanceState);
+
         try {
             getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
             getSupportActionBar().setCustomView(R.layout.custom_bar);
@@ -39,9 +40,11 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
             System.out.println(e.getMessage());
         }
         setContentView(R.layout.activity_main);
-
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.custom_bar);
+
+//        expandableListAdapter = new ExpandableListAdapter(this);
+//        userStudy = expandableListAdapter.get_studyCheckList();
 
         rv = (RecyclerView) findViewById(R.id.rv);
         LinearLayoutManager llm = new LinearLayoutManager(this);
@@ -49,7 +52,6 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
         rv.setHasFixedSize(true);
 
         items = new ArrayList<>();
-
         items.add(new Item("가상현실 트랙"));
         items.add(new Item("인공지능 트랙"));
         items.add(new Item("응용SW 트랙"));
@@ -61,10 +63,8 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
         items.add(new Item("데이터 사이언스 트랙"));
         items.add(new Item("정보보호 트랙"));
 
-
         adapter = new RVAdapter(this, items);
         rv.setAdapter(adapter);
-
 
         registerStudyBtn = (Button)findViewById(R.id.registerStudyBtn);
         registerStudyBtn.setOnClickListener(new View.OnClickListener() {

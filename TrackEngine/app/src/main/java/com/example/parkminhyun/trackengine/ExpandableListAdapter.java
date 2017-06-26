@@ -20,13 +20,16 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter  {
 
     private Context _context;
     String[] itemWords;
-    List<String> items;
+    public static List<String> items;
 
     private List<String> studyCheckList;
     private List<String> _listDataHeader; // header titles
     // child data in format of header title, child title
     private HashMap<String, List<String>> _listDataChild;
 
+    public ExpandableListAdapter(Context context) {
+        this._context = context;
+    }
 
     public ExpandableListAdapter(Context context, List<String> listDataHeader,
                                  HashMap<String, List<String>> listChildData) {
@@ -46,11 +49,23 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter  {
         }
     }
 
-    public List<String> get_lstudyCheckList() {
+    public List<String> loadStudyDataList(){
+        SharedPreferences settings = _context.getSharedPreferences("PREFS",0);
+        String wordsString = settings.getString("studyNameList","");
+        itemWords = wordsString.split(",");
+        items = new ArrayList<String>();
+        for(int i=0; i< itemWords.length; i++){
+            items.add(itemWords[i]);
+        }
+
+        return items;
+    }
+
+    public List<String> get_studyCheckList() {
         return studyCheckList;
     }
 
-    public void set_lstudyCheckList(List<String> _studyList) {
+    public void set_studyCheckList(List<String> _studyList) {
         this.studyCheckList = _studyList;
     }
 
@@ -97,7 +112,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter  {
         });
 
         for(int i=0; i< itemWords.length; i++){
-            if(items.get(i).toString().equals(childText.toString()) && !items.get((i)).toString().equals("")){
+            if(items.get(i).toString().equals(childText.toString()) && !items.get((i)).toString().equals("")) {
                 studyCheckbox.setChecked(true);
             }
         }
