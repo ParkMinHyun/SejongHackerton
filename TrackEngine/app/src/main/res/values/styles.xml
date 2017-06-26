@@ -169,4 +169,11 @@
         <item name="android:textStyle">bold</item>
         <item name="textAllCaps">false</item>
     </style>
+
+    <!-- for EditText-->
+    <style name="EditTextColor" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="colorControlHighlight">#FFFFFF</item>
+    </style>
 </resources>

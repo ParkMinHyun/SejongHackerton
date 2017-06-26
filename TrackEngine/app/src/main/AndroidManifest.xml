@@ -18,17 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".AccreditInfoActivity"
-            />
-        <activity
-            android:name=".RegisterStudyActivity"
-           />
+        <activity android:name=".AccreditInfoActivity" />
+        <activity android:name=".RegisterStudyActivity" />
         <activity android:name=".VirtualRealityActivity" />
         <activity android:name=".ArtificialIntelligenceActivity" />
         <activity android:name=".ApplicationSWActivity" />
         <activity android:name=".HCIAndVCActivity" />
-        <activity android:name=".MultiMediaActivity"></activity>
+        <activity android:name=".MultiMediaActivity" />
+        <activity android:name=".loginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
     </application>
 
 </manifest>
