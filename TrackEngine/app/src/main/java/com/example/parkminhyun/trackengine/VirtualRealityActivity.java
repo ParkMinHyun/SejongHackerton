@@ -30,7 +30,7 @@ public class VirtualRealityActivity extends AppCompatActivity {
     private RecyclerView rvSubject;
     RVAdapterVirtualReality adapter;
 
-    ExpandableListAdapter expandableListAdapter;
+    UserStudyData userStudyData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,8 +76,8 @@ public class VirtualRealityActivity extends AppCompatActivity {
         rvSubject.setHasFixedSize(true);
 
         subjects = new ArrayList<>();
-        expandableListAdapter = new ExpandableListAdapter(this);
-        List<String> userStudy = expandableListAdapter.loadStudyDataList();
+        userStudyData = new UserStudyData(this);
+        List<String> userStudy = userStudyData.loadStudyDataList();
 
         subjects.add(new Subject("[2-1]", "멀티미디어 프로그래밍"));
         subjects.add(new Subject("[2-1]", "멀티미디어"));

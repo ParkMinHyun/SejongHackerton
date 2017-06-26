@@ -19,7 +19,7 @@ public class ApplicationSWActivity extends AppCompatActivity {
     private List<Subject> subjects;
     private RecyclerView rvSubject;
     RVAdapterVirtualReality adapter;
-    ExpandableListAdapter expandableListAdapter;
+    UserStudyData userStudyData;
 
     ImageView TroubleshootingAndPracticeImageView, multiMediaProgrammingImageView, windowProgrammingView,
             mobileProgrammingImageView,webServerProgrammingImageView,digitalSoundImageView,imageProcessingImageView,
@@ -59,8 +59,8 @@ public class ApplicationSWActivity extends AppCompatActivity {
         VoiceProcessingSoftwareImageView = (ImageView)findViewById(R.id.VoiceProcessingSoftwareImageView);
 
         subjects = new ArrayList<>();
-        expandableListAdapter = new ExpandableListAdapter(this);
-        List<String> userStudy = expandableListAdapter.loadStudyDataList();
+        userStudyData = new UserStudyData(this);
+        List<String> userStudy = userStudyData.loadStudyDataList();
 
         for(int i=0; i< userStudy.size(); i++) {
             switch (userStudy.get(i).toString()) {

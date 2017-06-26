@@ -1,6 +1,5 @@
 package com.example.parkminhyun.trackengine;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -17,9 +16,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import static com.example.parkminhyun.trackengine.AccreditInfoActivity.mContextTourInfo;
-import static java.lang.System.in;
 
 
 public class AccreditInfoTab1_LiberalArts extends Fragment {
@@ -47,7 +43,7 @@ public class AccreditInfoTab1_LiberalArts extends Fragment {
     private RecyclerView rv;
     AccreditAdapter adapter;
     private List<String> subjects;
-    ExpandableListAdapter expandableListAdapter;
+    UserStudyData userStudyData;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -55,8 +51,8 @@ public class AccreditInfoTab1_LiberalArts extends Fragment {
 
         subjects=Arrays.asList("EnglishListeningPractice1","EnglishListeningPractice2","EnglishWriting1","EnglishWriting2","TechnicalWriting기초");
 
-        expandableListAdapter = new ExpandableListAdapter(getActivity());
-        List<String> userStudy = expandableListAdapter.loadStudyDataList();
+        userStudyData = new UserStudyData(getActivity());
+        List<String> userStudy = userStudyData.loadStudyDataList();
 
         items = new ArrayList<>();
 
