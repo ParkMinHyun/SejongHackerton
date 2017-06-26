@@ -10,7 +10,7 @@
 
     <android.support.v7.widget.CardView
         android:id="@+id/cv_virtual_reality_track"
-        android:layout_width="match_parent"
+        android:layout_width="400dp"
         android:layout_height="400dp"
         android:layout_margin="15dp"
         app:cardCornerRadius="5dp">
@@ -276,12 +276,29 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="450dp"
         android:layout_below="@+id/cv_virtual_reality_track">
+        <LinearLayout
+            android:id="@+id/virtualRealitySubjectLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/trackengine_lowtitlebar"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/rv_subject">
+            android:id="@+id/rv_subject"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/virtualRealitySubjectLinearLayout">
 
         </android.support.v7.widget.RecyclerView>
     </RelativeLayout>
