@@ -78,35 +78,35 @@ public class ApplicationSWActivity extends AppCompatActivity {
             switch (userStudy.get(i).toString()) {
                 case "문제해결 및 실습: C++":
                     multiMediaProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
-                    TroubleshootingAndPracticeTextView.setTextColor(Color.BLACK);
+                    TroubleshootingAndPracticeTextView.setTextColor(Color.BLACK); break;
 //                    subjects.remove(0); break;
                 case "멀티미디어 프로그래밍":
                     multiMediaProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
-                    multiMediaProgrammingTextView.setTextColor(Color.BLACK);
+                    multiMediaProgrammingTextView.setTextColor(Color.BLACK); break;
 //                    subjects.remove(1); break;
                 case "윈도우즈 프로그래밍":
                     windowProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
-                    windowProgrammingTextView.setTextColor(Color.BLACK);
+                    windowProgrammingTextView.setTextColor(Color.BLACK); break;
 //                    subjects.remove(2); break;
                 case "모바일 프로그래밍":
                     mobileProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
-                    mobileProgrammingTextView.setTextColor(Color.BLACK);
+                    mobileProgrammingTextView.setTextColor(Color.BLACK); break;
 //                    subjects.remove(3); break;
                 case "웹프로그래밍":
                     webServerProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
-                    webServerProgrammingTextView.setTextColor(Color.BLACK);
+                    webServerProgrammingTextView.setTextColor(Color.BLACK); break;
 //                    subjects.remove(4); break;
                 case "디지털 사운드":
                     digitalSoundImageView.setBackgroundColor(Color.rgb(52, 152, 219));
-                    digitalSoundTextView.setTextColor(Color.BLACK);
+                    digitalSoundTextView.setTextColor(Color.BLACK); break;
 //                    subjects.remove(5); break;
                 case "영상처리":
                     imageProcessingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
-                    imageProcessingTextView.setTextColor(Color.BLACK);
+                    imageProcessingTextView.setTextColor(Color.BLACK); break;
 //                    subjects.remove(6); break;
                 case "컴퓨터비전 시스템":
                     computerVisionSystemImageView.setBackgroundColor(Color.rgb(52, 152, 219));
-                    VoiceProcessingSoftwareTextView.setTextColor(Color.BLACK);
+                    VoiceProcessingSoftwareTextView.setTextColor(Color.BLACK); break;
 //                    subjects.remove(7); break;
             }
         }
