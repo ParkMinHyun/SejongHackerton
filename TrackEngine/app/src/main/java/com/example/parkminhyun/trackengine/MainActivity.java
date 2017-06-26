@@ -1,6 +1,5 @@
 package com.example.parkminhyun.trackengine;
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -8,26 +7,29 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     private ExpandableListAdapter expandableListAdapter;
+    private CalculateTrackCompleteNum calculateTrackCompleteNum;
+
+    private StringBuilder stringBuilder;
+    String[] itemStudys;
+
     private List<String> userStudy;
     private List<Item> items;
     private RecyclerView rv;
+    private ImageView imageView;
+
     RVAdapter adapter;
     Button registerStudyBtn;
-    private ImageView imageView;
     CardView cv_Engineer;
 
     @Override
@@ -61,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
             }
+//        expandableListAdapter = new ExpandableListAdapter(this);
+//        userStudy = expandableListAdapter.get_studyCheckList();
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {

@@ -2,27 +2,27 @@ package com.example.parkminhyun.trackengine;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBar;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
+
 import java.util.ArrayList;
 import java.util.List;
-import static com.example.parkminhyun.trackengine.AccreditInfoActivity.mContextTourInfo;
 
 public class MainTab1 extends Fragment implements AdapterCallback {
+
+    private CalculateTrackCompleteNum calculateTrackCompleteNum;
+
+    private StringBuilder stringBuilder;
+    String[] itemStudys;
 
     private TextView nameText;
     public String spotName;
@@ -46,6 +46,12 @@ public class MainTab1 extends Fragment implements AdapterCallback {
         rv.setLayoutManager(llm);
         rv.setHasFixedSize(true);
 
+        // user 선택한 과목에서 Track 이수학점 계산하기
+        calculateTrackCompleteNum = new CalculateTrackCompleteNum(getActivity());
+        stringBuilder = calculateTrackCompleteNum.calculateTrackComplete();
+        String userStudys = stringBuilder.toString();
+        itemStudys = userStudys.split(",");
+
         items = new ArrayList<>();
         items.add(new Item("가상현실 트랙"));
         items.add(new Item("인공지능 트랙"));
@@ -58,7 +64,7 @@ public class MainTab1 extends Fragment implements AdapterCallback {
         items.add(new Item("데이터 사이언스 트랙"));
         items.add(new Item("정보보호 트랙"));
 
-        adapter = new RVAdapter(getActivity(), items);
+        adapter = new RVAdapter(getActivity(), items,itemStudys);
         rv.setAdapter(adapter);
 
         registerStudyBtn = (Button)inflatedView.findViewById(R.id.registerStudyBtn);
