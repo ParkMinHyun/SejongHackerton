@@ -27,7 +27,9 @@
         <activity android:name=".EngineerCertificationActivity" />
         <activity android:name=".VirtualRealityActivity" />
         <activity android:name=".ArtificialIntelligenceActivity" />
-        <activity android:name=".ApplicationSWActivity"></activity>
+        <activity android:name=".ApplicationSWActivity" />
+        <activity android:name=".HCIAndVCActivity" />
+        <activity android:name=".MultiMediaActivity"></activity>
     </application>
 
 </manifest>

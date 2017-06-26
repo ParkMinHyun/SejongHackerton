@@ -47,8 +47,10 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ItemViewHolder> {
                             mContext.startActivity(new Intent(mContext, ApplicationSWActivity.class));
                             break;
                         case 3:
+                            mContext.startActivity(new Intent(mContext, HCIAndVCActivity.class));
                             break;
                         case 4:
+                            mContext.startActivity(new Intent(mContext, MultiMediaActivity.class));
                             break;
                         case 5:
                             break;

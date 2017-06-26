@@ -108,7 +108,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/mobileProgramming"
+                        android:id="@+id/mobileProgrammingImageView"
                         android:layout_width="100dp"
                         android:layout_height="15dp"
                         android:layout_marginLeft="10dp"
@@ -118,7 +118,7 @@
                     <TextView
                         android:layout_width="125dp"
                         android:layout_height="75dp"
-                        android:layout_below="@id/mobileProgramming"
+                        android:layout_below="@id/mobileProgrammingImageView"
                         android:gravity="center"
                         android:text="모바일\n프로그래밍"
                         android:textSize="18dp"
