@@ -97,7 +97,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter  {
         });
 
         for(int i=0; i< itemWords.length; i++){
-            if(items.get(i).toString().equals(childText.toString()) && !items.get((i)).toString().equals("")){
+            if(items.get(i).toString().equals(childText.toString()) && !items.get((i)).toString().equals("")) {
                 studyCheckbox.setChecked(true);
             }
         }
