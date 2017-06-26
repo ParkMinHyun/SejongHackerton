@@ -26,7 +26,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="150dp"
+                    android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
                     <ImageView
@@ -34,11 +34,11 @@
                         android:layout_width="100dp"
                         android:layout_height="15dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginLeft="5dp"
                         android:background="#BDBDBD"/>
 
                     <TextView
-                        android:layout_width="150dp"
+                        android:layout_width="110dp"
                         android:layout_height="75dp"
                         android:layout_below="@id/multiMediaProgrammingImageView"
                         android:textSize="18dp"
@@ -48,7 +48,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="150dp"
+                    android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
                     <ImageView
@@ -56,11 +56,11 @@
                         android:layout_width="100dp"
                         android:layout_height="15dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginLeft="5dp"
                         android:background="#BDBDBD"/>
 
                     <TextView
-                        android:layout_width="150dp"
+                        android:layout_width="110dp"
                         android:layout_height="75dp"
                         android:layout_below="@id/computerGraphicsImageView"
                         android:textSize="18dp"
@@ -70,7 +70,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="150dp"
+                    android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
                     <ImageView
@@ -78,11 +78,11 @@
                         android:layout_width="100dp"
                         android:layout_height="15dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginLeft="5dp"
                         android:background="#BDBDBD"/>
 
                     <TextView
-                        android:layout_width="150dp"
+                        android:layout_width="110dp"
                         android:layout_height="75dp"
                         android:layout_below="@id/premiumRealTimeGraphicsImageView"
                         android:textSize="18dp"
@@ -100,7 +100,7 @@
                 android:orientation="horizontal"
                 android:layout_below="@id/firstLinearLayout">
                 <LinearLayout
-                    android:layout_width="150dp"
+                    android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
@@ -108,12 +108,12 @@
                         android:id="@+id/multiMediaImageView"
                         android:layout_width="100dp"
                         android:layout_height="15dp"
-                        android:layout_marginLeft="25dp"
                         android:layout_marginTop="10dp"
-                        android:background="#BDBDBD" />
+                        android:layout_marginLeft="10dp"
+                        android:background="#BDBDBD"/>
 
                     <TextView
-                        android:layout_width="150dp"
+                        android:layout_width="120dp"
                         android:layout_height="75dp"
                         android:layout_below="@id/multiMediaImageView"
                         android:textSize="18dp"
@@ -123,7 +123,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="150dp"
+                    android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
                     <ImageView
@@ -131,11 +131,11 @@
                         android:layout_width="100dp"
                         android:layout_height="15dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginLeft="10dp"
                         android:background="#BDBDBD"/>
 
                     <TextView
-                        android:layout_width="150dp"
+                        android:layout_width="120dp"
                         android:layout_height="75dp"
                         android:layout_below="@id/gameProgrammingImageView"
                         android:textSize="18dp"
@@ -145,7 +145,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="150dp"
+                    android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
                     <ImageView
@@ -153,11 +153,11 @@
                         android:layout_width="100dp"
                         android:layout_height="15dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginLeft="10dp"
                         android:background="#BDBDBD"/>
 
                     <TextView
-                        android:layout_width="150dp"
+                        android:layout_width="120dp"
                         android:layout_height="75dp"
                         android:layout_below="@id/digitalSoundImageView"
                         android:textSize="18dp"
