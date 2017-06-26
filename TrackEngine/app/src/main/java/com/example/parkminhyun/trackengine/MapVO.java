@@ -128,5 +128,4 @@ public class MapVO {
     public String getSub10() {
         return sub10;
     }
-
 }

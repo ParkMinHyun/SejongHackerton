@@ -99,15 +99,4 @@ public class MainActivity extends AppCompatActivity {
             w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
     }
-//
-//    @Override
-//    public void startEachActivity(int position) {
-//        switch(position){ // SW융합대학 트랙 별 이수체제도 하위 아이템 position을 읽어서 해당 포지션에 매칭되는 activity 실행
-//            case 0:
-//                startActivity(new Intent(MainActivity.this, VirtualRealityActivity.class));
-//                break;
-//            default:
-//                break;
-//        }
-//    }
 }
