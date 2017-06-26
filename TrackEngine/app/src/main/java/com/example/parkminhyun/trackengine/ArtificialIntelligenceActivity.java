@@ -25,7 +25,7 @@ public class ArtificialIntelligenceActivity extends AppCompatActivity {
     private RecyclerView rvSubject;
     RVAdapterVirtualReality adapter;
 
-    ExpandableListAdapter expandableListAdapter;
+    UserStudyData userStudyData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,8 +55,8 @@ public class ArtificialIntelligenceActivity extends AppCompatActivity {
         intelligentSystemImageView = (ImageView)findViewById(R.id.intelligentSystemImageView);
 
         subjects = new ArrayList<>();
-        expandableListAdapter = new ExpandableListAdapter(this);
-        List<String> userStudy = expandableListAdapter.loadStudyDataList();
+        userStudyData = new UserStudyData(this);
+        List<String> userStudy = userStudyData.loadStudyDataList();
 
         for(int i=0; i< userStudy.size(); i++){
             switch (userStudy.get(i).toString()){

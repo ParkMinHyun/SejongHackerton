@@ -12,15 +12,15 @@ public class CalculateTrackCompleteNum {
     private int virtualTrackCnt = 0, aiTrackCnt = 0, appSoftwareTrackCnt = 0, hciTrackCnt = 0, multiMediaTrackCnt = 0
             , iotTrackStudyCnt = 0, systemAppTrackCnt= 0, intelPerceptionTrackCnt = 0, dataScienceTrackCnt = 0, infoProtectionTrackCnt = 0;
 
-    private ExpandableListAdapter expandableListAdapter;
+    private UserStudyData userStudyData;
     private Context context;
     private List<String> userStudy;
 
     // 생성자
     public CalculateTrackCompleteNum(Context context){
         this.context = context;
-        expandableListAdapter = new ExpandableListAdapter(context);
-        userStudy = expandableListAdapter.loadStudyDataList();
+        userStudyData = new UserStudyData(context);
+        userStudy = userStudyData.loadStudyDataList();
     }
 
     // 계산
