@@ -5,12 +5,271 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.parkminhyun.trackengine.VirtualRealityActivity">
+    tools:context="com.example.parkminhyun.trackengine.VirtualRealityActivity"
+    android:background="@drawable/backgroundo">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="400dp"
+        android:layout_margin="15dp"
         app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/firstLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/multiMediaProgrammingImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#3498db"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/multiMediaProgrammingImageView"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="멀티미디어\n프로그래밍"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/computerGraphicsImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#BDBDBD"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/computerGraphicsImageView"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="컴퓨터\n그래픽스"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/premiumRealTimeGraphicsImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#3498db"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/premiumRealTimeGraphicsImageView"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="고급 실시간\n그래픽스"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secondLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/firstLinearLayout">
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/multiMediaImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#BDBDBD"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/multiMediaImageView"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="멀티미디어"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/gameProgrammingImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#BDBDBD"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/gameProgrammingImageView"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="게임\n프로그래밍"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/digitalSoundImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#BDBDBD"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/digitalSoundImageView"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="디지털\n사운드"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thirdLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/secondLinearLayout">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/virtualRealityImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#BDBDBD"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/virtualRealityImageView"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="가상현실"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/computerAnimationImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#3498db"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/computerAnimationImageView"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="컴퓨터\n애니메이션"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/augmentedRealityImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#BDBDBD"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/augmentedRealityImageView"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="증강현실"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fourLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/thirdLinearLayout">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/HCIIntroductionImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#BDBDBD"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/HCIIntroductionImageView"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="증강현실"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
 
     </android.support.v7.widget.CardView>
 </RelativeLayout>
