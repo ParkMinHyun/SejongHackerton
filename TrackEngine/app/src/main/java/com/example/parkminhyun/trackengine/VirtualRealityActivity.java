@@ -79,7 +79,7 @@ public class VirtualRealityActivity extends AppCompatActivity {
                     multiMediaProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
                 case "멀티미디어" :
                     multiMediaImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
-                case "컴퓨터 그래픽스" :
+                case "컴퓨터그래픽스" :
                     computerGraphicsImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
                 case "게임 프로그래밍" :
                     gameProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;

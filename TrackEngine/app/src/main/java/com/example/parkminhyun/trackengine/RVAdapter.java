@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.daimajia.numberprogressbar.NumberProgressBar;
+
 import java.util.List;
 
 /**
@@ -16,6 +18,10 @@ import java.util.List;
  */
 
 public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ItemViewHolder> {
+
+    com.daimajia.numberprogressbar.NumberProgressBar progressBar;
+    private String[] userStudyofTrack;
+    private int trackCnt = 0;
 
     public class ItemViewHolder extends RecyclerView.ViewHolder{
         CardView cv; // cardView
@@ -36,15 +42,21 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ItemViewHolder> {
     List<Item> items;
     Context mContext;
 
-    public RVAdapter(Context context, List<Item> items)
+    public RVAdapter(Context context, List<Item> items, String[] userStudyofTrack)
     {
         this.mContext = context;
         this.items = items;
+        this.userStudyofTrack = userStudyofTrack;
     }
 
     @Override
     public ItemViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.main_track, viewGroup, false);
+        progressBar = (NumberProgressBar) v.findViewById(R.id.numberbar1);
+
+        progressBar.setProgress(Integer.valueOf(userStudyofTrack[trackCnt]));
+        trackCnt ++;
+
         ItemViewHolder ivh = new ItemViewHolder(v);
         return ivh;
     }

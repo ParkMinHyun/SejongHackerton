@@ -20,12 +20,18 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements AdapterCallback {
 
     private ExpandableListAdapter expandableListAdapter;
+    private CalculateTrackCompleteNum calculateTrackCompleteNum;
+
+    private StringBuilder stringBuilder;
+    String[] itemStudys;
+
     private List<String> userStudy;
     private List<Item> items;
     private RecyclerView rv;
+    private ImageView imageView;
+
     RVAdapter adapter;
     Button registerStudyBtn;
-    private ImageView imageView;
     CardView cv_Engineer;
 
     @Override
@@ -48,6 +54,13 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
 
         rv = (RecyclerView) findViewById(R.id.rv);
         LinearLayoutManager llm = new LinearLayoutManager(this);
+
+        // user 선택한 과목에서 Track 이수학점 계산하기
+        calculateTrackCompleteNum = new CalculateTrackCompleteNum(this);
+        stringBuilder = calculateTrackCompleteNum.calculateTrackComplete();
+        String userStudys = stringBuilder.toString();
+        itemStudys = userStudys.split(",");
+
         rv.setLayoutManager(llm);
         rv.setHasFixedSize(true);
 
@@ -63,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
         items.add(new Item("데이터 사이언스 트랙"));
         items.add(new Item("정보보호 트랙"));
 
-        adapter = new RVAdapter(this, items);
+        adapter = new RVAdapter(this, items,itemStudys);
         rv.setAdapter(adapter);
 
         registerStudyBtn = (Button)findViewById(R.id.registerStudyBtn);
