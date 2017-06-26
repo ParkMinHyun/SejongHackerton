@@ -325,6 +325,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="65dp"
+                            android:id="@+id/VoiceProcessingSoftwareTextView"
                             android:layout_below="@id/VoiceProcessingSoftwareImageView"
                             android:gravity="center"
                             android:textColor="#BDBDBD"

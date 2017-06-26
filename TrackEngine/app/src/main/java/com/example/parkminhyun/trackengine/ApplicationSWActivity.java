@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,12 +25,12 @@ public class ApplicationSWActivity extends AppCompatActivity {
     ImageView TroubleshootingAndPracticeImageView, multiMediaProgrammingImageView, windowProgrammingImageView,
             mobileProgrammingImageView,webServerProgrammingImageView,digitalSoundImageView,imageProcessingImageView,
             computerVisionSystemImageView,VoiceProcessingSoftwareImageView;
-//
-//    TextView multiMediaProgrammingTextView, computerGraphicsTextView, premiumRealTimeGraphicsTextView,
-//            multiMediaTextView,gameProgrammingTextView,digitalSoundTextView,virtualRealityTextView,
-//            computerAnimationTextView,augmentedRealityTextView,HCIIntroductionTextView;
-//
-//
+
+    TextView TroubleshootingAndPracticeTextView, multiMediaProgrammingTextView, windowProgrammingTextView,
+            mobileProgrammingTextView,webServerProgrammingTextView,digitalSoundTextView,imageProcessingTextView,
+            computerVisionSystemTextView,VoiceProcessingSoftwareTextView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         makeTransParentStatusBar();
@@ -58,6 +59,17 @@ public class ApplicationSWActivity extends AppCompatActivity {
         computerVisionSystemImageView = (ImageView)findViewById(R.id.computerVisionSystemImageView);
         VoiceProcessingSoftwareImageView = (ImageView)findViewById(R.id.VoiceProcessingSoftwareImageView);
 
+
+        TroubleshootingAndPracticeTextView = (TextView) findViewById(R.id.TroubleshootingAndPracticeTextView);
+        multiMediaProgrammingTextView = (TextView)findViewById(R.id.multiMediaProgrammingTextView);
+        windowProgrammingTextView = (TextView)findViewById(R.id.windowProgrammingTextView);
+        mobileProgrammingTextView = (TextView)findViewById(R.id.mobileProgrammingTextView);
+        webServerProgrammingTextView = (TextView)findViewById(R.id.webServerProgrammingTextView);
+        digitalSoundTextView = (TextView)findViewById(R.id.digitalSoundTextView);
+        imageProcessingTextView = (TextView)findViewById(R.id.imageProcessingTextView);
+        computerVisionSystemTextView = (TextView)findViewById(R.id.computerVisionSystemTextView);
+        VoiceProcessingSoftwareTextView = (TextView)findViewById(R.id.VoiceProcessingSoftwareTextView);
+
         subjects = new ArrayList<>();
         userStudyData = new UserStudyData(this);
         List<String> userStudy = userStudyData.loadStudyDataList();
@@ -66,35 +78,35 @@ public class ApplicationSWActivity extends AppCompatActivity {
             switch (userStudy.get(i).toString()) {
                 case "문제해결 및 실습: C++":
                     multiMediaProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
-//                    multiMediaProgrammingTextView.setTextColor(Color.BLACK);
+                    TroubleshootingAndPracticeTextView.setTextColor(Color.BLACK);
 //                    subjects.remove(0); break;
                 case "멀티미디어 프로그래밍":
                     multiMediaProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
-//                    multiMediaTextView.setTextColor(Color.BLACK);
+                    multiMediaProgrammingTextView.setTextColor(Color.BLACK);
 //                    subjects.remove(1); break;
                 case "윈도우즈 프로그래밍":
                     windowProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
-//                    computerGraphicsTextView.setTextColor(Color.BLACK);
+                    windowProgrammingTextView.setTextColor(Color.BLACK);
 //                    subjects.remove(2); break;
                 case "모바일 프로그래밍":
                     mobileProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
-//                    gameProgrammingTextView.setTextColor(Color.BLACK);
+                    mobileProgrammingTextView.setTextColor(Color.BLACK);
 //                    subjects.remove(3); break;
                 case "웹프로그래밍":
                     webServerProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
-//                    premiumRealTimeGraphicsTextView.setTextColor(Color.BLACK);
+                    webServerProgrammingTextView.setTextColor(Color.BLACK);
 //                    subjects.remove(4); break;
                 case "디지털 사운드":
                     digitalSoundImageView.setBackgroundColor(Color.rgb(52, 152, 219));
-//                    digitalSoundTextView.setTextColor(Color.BLACK);
+                    digitalSoundTextView.setTextColor(Color.BLACK);
 //                    subjects.remove(5); break;
                 case "영상처리":
                     imageProcessingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
-//                    virtualRealityTextView.setTextColor(Color.BLACK);
+                    imageProcessingTextView.setTextColor(Color.BLACK);
 //                    subjects.remove(6); break;
                 case "컴퓨터비전 시스템":
                     computerVisionSystemImageView.setBackgroundColor(Color.rgb(52, 152, 219));
-//                    computerAnimationTextView.setTextColor(Color.BLACK);
+                    VoiceProcessingSoftwareTextView.setTextColor(Color.BLACK);
 //                    subjects.remove(7); break;
             }
         }
