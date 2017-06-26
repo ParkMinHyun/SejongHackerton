@@ -26,7 +26,8 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".EngineerCertificationActivity" />
         <activity android:name=".VirtualRealityActivity" />
-        <activity android:name=".ArtificialIntelligenceActivity"></activity>
+        <activity android:name=".ArtificialIntelligenceActivity" />
+        <activity android:name=".ApplicationSWActivity"></activity>
     </application>
 
 </manifest>

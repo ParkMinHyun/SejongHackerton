@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.parkminhyun.trackengine.ApplicationSWActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/firstLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/TroubleshootingAndPracticeImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/TroubleshootingAndPracticeImageView"
+                        android:gravity="center"
+                        android:text="문제해결및실습\nC++"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/multiMediaProgrammingImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/multiMediaProgrammingImageView"
+                        android:gravity="center"
+                        android:text="멀티미디어\n프로그래밍"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/windowProgrammingView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/windowProgrammingView"
+                        android:gravity="center"
+                        android:text="윈도우\n프로그래밍"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secondLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/firstLinearLayout"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/mobileProgramming"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/mobileProgramming"
+                        android:gravity="center"
+                        android:text="모바일\n프로그래밍"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/webServerProgrammingImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/webServerProgrammingImageView"
+                        android:gravity="center"
+                        android:text="웹서버\n프로그래밍"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/digitalSoundImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/digitalSoundImageView"
+                        android:gravity="center"
+                        android:text="디지털\n사운드"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thirdLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/secondLinearLayout"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageProcessingImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/imageProcessingImageView"
+                        android:gravity="center"
+                        android:text="영상처리"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/computerVisionSystemImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/computerVisionSystemImageView"
+                        android:gravity="center"
+                        android:text="컴퓨터\n비전 시스템"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/VoiceProcessingSoftwareImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BDBDBD" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/VoiceProcessingSoftwareImageView"
+                        android:gravity="center"
+                        android:text="음성처리\n소프트웨어"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
