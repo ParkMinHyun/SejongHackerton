@@ -17,6 +17,7 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:layout_weight="10">
+
             <LinearLayout
                 android:layout_weight="3"
                 android:layout_width="0dp"
@@ -110,5 +111,5 @@
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:background="#00214E" />
+        android:background="@color/white2" />
 </LinearLayout>

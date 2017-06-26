@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
         cv_Engineer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, EngineerCertificationActivity.class));
+                startActivity(new Intent(MainActivity.this, AccreditInfoActivity.class));
             }
         });
     }

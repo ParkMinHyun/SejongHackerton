@@ -32,7 +32,7 @@ public class AccreditInfoActivity extends AppCompatActivity {
 
         //탭 레이아웃
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("전문교양"));
+        tabLayout.addTab((tabLayout.newTab().setText("전문교양")));
         tabLayout.addTab(tabLayout.newTab().setText("BSM"));
         tabLayout.addTab(tabLayout.newTab().setText("전공"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
