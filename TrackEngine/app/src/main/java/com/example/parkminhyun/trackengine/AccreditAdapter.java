@@ -55,6 +55,24 @@ public class AccreditAdapter extends RecyclerView.Adapter<AccreditAdapter.ItemVi
                                     }
                                 }).show();
                     }
+                    else if(name.getText().equals("이산수학및프로그래밍"))
+                    {
+                        new AlertDialog.Builder(itemView.getContext()).setTitle("이산수학및프로그래밍")
+                                .setMessage("컴퓨터는 이진수 체계로 운영되는 특성상 그 응용과정에서도 주로 이산적인 자료를 대상으로 하게 된다. 컴퓨터에 관련된 집합과 함수, 행렬, 부울대수, 알고리즘 등의 수학적 배경을 학습한다.")
+                                .setNeutralButton("닫기",new DialogInterface.OnClickListener(){
+                                    public void onClick(DialogInterface dig,int sumthin){
+                                    }
+                                }).show();
+                    }
+                    else if(name.getText().equals("알고리즘및실습"))
+                    {
+                        new AlertDialog.Builder(itemView.getContext()).setTitle("알고리즘및실습")
+                                .setMessage("알고리즘이란 어떤 구체적 목표를 달성하기 위한 분명한 절차를 말한다. 컴퓨터를 사용하여 어러 가지 유형의 문제를 해결하는 일반적인 알고리즘 기법을 소개한다.")
+                                .setNeutralButton("닫기",new DialogInterface.OnClickListener(){
+                                    public void onClick(DialogInterface dig,int sumthin){
+                                    }
+                                }).show();
+                    }
 //                    switch(name.getText())
 //                    {
 //                        case "공업수학1":
