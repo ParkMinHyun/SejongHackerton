@@ -1,6 +1,7 @@
 package com.example.parkminhyun.trackengine;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView rv;
     RVAdapter adapter;
     Button registerStudyBtn;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +70,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        imageView=(ImageView)findViewById(R.id.imageView);
+        imageView.setOnClickListener(btnListener);
     }
+
+    Button.OnClickListener btnListener = new View.OnClickListener() {
+        public void onClick(View v) {
+            switch (v.getId()) {
+                case R.id.imageView:
+                    Intent accreditIntent=new Intent(MainActivity.this,AccreditInfoActivity.class);
+                    startActivity(accreditIntent);
+                    break;
+            }
+        }
+    };
 
     public void makeTransParentStatusBar(){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
