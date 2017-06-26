@@ -1,8 +1,12 @@
 package com.example.parkminhyun.trackengine;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ExpandableListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,64 +17,151 @@ public class RegisterStudyActivity extends AppCompatActivity {
     ExpandableListAdapter listAdapter;
     ExpandableListView expListView;
     List<String> listDataHeader;
+    List<String> studyNameList;
     HashMap<String, List<String>> listDataChild;
 
+    Button saveBtn;
+    List<String> semester1_1,semester1_2,semester2_1,semester2_2,semester3_1,semester3_2,semester4_1,semester4_2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_study);
-        // get the listview
-        expListView = (ExpandableListView) findViewById(R.id.lvExp);
 
-        // preparing list data
+        saveBtn = (Button)findViewById(R.id.saveBtn);
+        expListView = (ExpandableListView) findViewById(R.id.lvExp);
         prepareListData();
 
         listAdapter = new ExpandableListAdapter(this, listDataHeader, listDataChild);
+        listAdapter.loadStudyData();
 
-        // setting list adapter
+        saveBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast toast = Toast.makeText(getApplicationContext(),"dd",Toast.LENGTH_SHORT);
+                toast.show();
+
+                studyNameList = listAdapter.get_lstudyCheckList();
+
+                StringBuilder stringBuilder = new StringBuilder();
+                for(String s : studyNameList){
+                    stringBuilder.append(s);
+                    stringBuilder.append(",");
+                }
+                SharedPreferences settings = getSharedPreferences("PREFS",0);
+                SharedPreferences.Editor editor = settings.edit();
+                editor.putString("studyNameList",stringBuilder.toString());
+                editor.commit();
+            }
+        });
+
+        // list Adapter 셋팅
         expListView.setAdapter(listAdapter);
     }
 
-    /*
-     * Preparing the list data
-     */
+    // list 아이템 셋팅
     private void prepareListData() {
         listDataHeader = new ArrayList<String>();
         listDataChild = new HashMap<String, List<String>>();
 
         // Adding child data
-        listDataHeader.add("Top 250");
-        listDataHeader.add("Now Showing");
-        listDataHeader.add("Coming Soon..");
+        listDataHeader.add("1학년 1학기");
+        listDataHeader.add("1학년 2학기");
+        listDataHeader.add("2학년 1학기");
+        listDataHeader.add("2학년 2학기");
+        listDataHeader.add("3학년 1학기");
+        listDataHeader.add("3학년 2학기");
+        listDataHeader.add("4학년 1학기");
+        listDataHeader.add("4학년 2학기");
 
         // Adding child data
-        List<String> top250 = new ArrayList<String>();
-        top250.add("The Shawshank Redemption");
-        top250.add("The Godfather");
-        top250.add("The Godfather: Part II");
-        top250.add("Pulp Fiction");
-        top250.add("The Good, the Bad and the Ugly");
-        top250.add("The Dark Knight");
-        top250.add("12 Angry Men");
+        semester1_1 = new ArrayList<String>();
+        semester1_1.add("C 프로그래밍 및 실습");
 
-        List<String> nowShowing = new ArrayList<String>();
-        nowShowing.add("The Conjuring");
-        nowShowing.add("Despicable Me 2");
-        nowShowing.add("Turbo");
-        nowShowing.add("Grown Ups 2");
-        nowShowing.add("Red 2");
-        nowShowing.add("The Wolverine");
+        semester1_2 = new ArrayList<String>();
+        semester1_2.add("공학설계기초");
+        semester1_2.add("고급 C 프로그래밍 및 실습");
+        semester1_2.add("전산개론-I");
 
-        List<String> comingSoon = new ArrayList<String>();
-        comingSoon.add("2 Guns");
-        comingSoon.add("The Smurfs 2");
-        comingSoon.add("The Spectacular Now");
-        comingSoon.add("The Canyons");
-        comingSoon.add("Europa Report");
+        semester2_1 = new ArrayList<String>();
+        semester2_1.add("윈도우즈 프로그래밍");
+        semester2_1.add("디지털시스템");
+        semester2_1.add("웹프로그래밍");
+        semester2_1.add("문제해결 및 실습: C++");
+        semester2_1.add("자료구조 및 실습");
 
-        listDataChild.put(listDataHeader.get(0), top250); // Header, Child data
-        listDataChild.put(listDataHeader.get(1), nowShowing);
-        listDataChild.put(listDataHeader.get(2), comingSoon);
+        semester2_2 = new ArrayList<String>();
+        semester2_2.add("오픈소스 SW 개론");
+        semester2_2.add("멀티미디어");
+        semester2_2.add("문제해결 및 실습: JAVA");
+        semester2_2.add("알고리즘 및 실습");
+        semester2_2.add("마이크로 컴퓨터");
+        semester2_2.add("컴퓨터 구조론");
+
+        semester3_1 = new ArrayList<String>();
+        semester3_1.add("신호 및 시스템");
+        semester3_1.add("오픈소스 SW 공학");
+        semester3_1.add("웹 프로그래밍 설계");
+        semester3_1.add("C# 프로그래밍");
+        semester3_1.add("데이터베이스");
+        semester3_1.add("운영체제");
+        semester3_1.add("컴퓨터그래픽스");
+        semester3_1.add("VHDL 프로그래밍");
+        semester3_1.add("프로그래밍 언어의 개념");
+
+        semester3_2 = new ArrayList<String>();
+        semester3_2.add("통신 시스템");
+        semester3_2.add("디지털 신호처리");
+        semester3_2.add("심화 프로그래밍 설계");
+        semester3_2.add("멀티코어 프로그래밍");
+        semester3_2.add("XML 프로그래밍");
+        semester3_2.add("컴퓨터 네트워크");
+        semester3_2.add("UNIX 프로그래밍");
+        semester3_2.add("소프트웨어 공학");
+        semester3_2.add("웹 기반 시스템");
+        semester3_2.add("멀티미디어 데이터베이스");
+
+        semester4_1 = new ArrayList<String>();
+        semester4_1.add("패턴 인식");
+        semester4_1.add("데이터 통신");
+        semester4_1.add("데이터 컴퓨팅");
+        semester4_1.add("시스템 모델링");
+        semester4_1.add("무선통신");
+        semester4_1.add("영상처리");
+        semester4_1.add("Capstone 디자인 산학협력프로젝트");
+        semester4_1.add("네트워크 프로그래밍");
+        semester4_1.add("인공지능");
+        semester4_1.add("정보보호개론");
+        semester4_1.add("가상현실");
+        semester4_1.add("소프트웨어 특강");
+        semester4_1.add("임베디드 시스템");
+        semester4_1.add("인턴십(3-0)");
+        semester4_1.add("인턴십(12-0)");
+
+        semester4_2 = new ArrayList<String>();
+        semester4_2.add("특허와 창업");
+        semester4_2.add("분산 시스템");
+        semester4_2.add("스마트 그리드");
+        semester4_2.add("영상처리 프로그래밍");
+        semester4_2.add("컴퓨터비전 시스템");
+        semester4_2.add("소프트웨어 특강2");
+        semester4_2.add("HCI 개론");
+        semester4_2.add("정보검색");
+        semester4_2.add("모바일 프로그래밍");
+        semester4_2.add("지능형 시스템");
+        semester4_2.add("인터넷 보안");
+        semester4_2.add("컴파일러");
+        semester4_2.add("인턴십(3-0)");
+        semester4_2.add("인턴십(12-0)");
+
+        listDataChild.put(listDataHeader.get(0), semester1_1); // Header, Child data
+        listDataChild.put(listDataHeader.get(1), semester1_2);
+        listDataChild.put(listDataHeader.get(2), semester2_1);
+        listDataChild.put(listDataHeader.get(3), semester2_2);
+        listDataChild.put(listDataHeader.get(4), semester3_1);
+        listDataChild.put(listDataHeader.get(5), semester3_2);
+        listDataChild.put(listDataHeader.get(6), semester4_1);
+        listDataChild.put(listDataHeader.get(7), semester4_2);
     }
 }
