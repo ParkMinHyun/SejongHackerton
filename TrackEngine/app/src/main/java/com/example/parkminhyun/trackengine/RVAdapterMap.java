@@ -111,68 +111,68 @@ public class MapViewHolder extends RecyclerView.ViewHolder {
 
         for(int i = 0; i < userStudyList.size(); i++){
             if(userStudyList.get(i).equals(maps.get(position).getSub0())){
-                holder.tv1.setTextColor(Color.rgb(0, 255, 0));
-                holder.iv1.setImageResource(R.drawable.circle_green);
+                holder.tv1.setTextColor(Color.rgb(3, 153, 58));
+                holder.iv1.setImageResource(R.drawable.circle_darkgreen);
             }
         }
         for(int i = 0; i < userStudyList.size(); i++){
             if(userStudyList.get(i).equals(maps.get(position).getSub2())){
-                holder.tv2.setTextColor(Color.rgb(0, 255, 0));
-                holder.iv2.setImageResource(R.drawable.circle_green);
+                holder.tv2.setTextColor(Color.rgb(3, 153, 58));
+                holder.iv2.setImageResource(R.drawable.circle_darkgreen);
             }
         }
         for(int i = 0; i < userStudyList.size(); i++){
             if(userStudyList.get(i).equals(maps.get(position).getSub2())){
-                holder.tv3.setTextColor(Color.rgb(0, 255, 0));
-                holder.iv3.setImageResource(R.drawable.circle_green);
+                holder.tv3.setTextColor(Color.rgb(3, 153, 58));
+                holder.iv3.setImageResource(R.drawable.circle_darkgreen);
             }
         }
         for(int i = 0; i < userStudyList.size(); i++){
             if(userStudyList.get(i).equals(maps.get(position).getSub3())){
-                holder.tv4.setTextColor(Color.rgb(0, 255, 0));
-                holder.iv4.setImageResource(R.drawable.circle_green);
+                holder.tv4.setTextColor(Color.rgb(3, 153, 58));
+                holder.iv4.setImageResource(R.drawable.circle_darkgreen);
             }
         }
         for(int i = 0; i < userStudyList.size(); i++){
             if(userStudyList.get(i).equals(maps.get(position).getSub4())){
-                holder.tv5.setTextColor(Color.rgb(0, 255, 0));
-                holder.iv5.setImageResource(R.drawable.circle_green);
+                holder.tv5.setTextColor(Color.rgb(3, 153, 58));
+                holder.iv5.setImageResource(R.drawable.circle_darkgreen);
             }
         }
         for(int i = 0; i < userStudyList.size(); i++){
             if(userStudyList.get(i).equals(maps.get(position).getSub5())){
-                holder.tv6.setTextColor(Color.rgb(0, 255, 0));
-                holder.iv6.setImageResource(R.drawable.circle_green);
+                holder.tv6.setTextColor(Color.rgb(3, 153, 58));
+                holder.iv6.setImageResource(R.drawable.circle_darkgreen);
             }
         }
         for(int i = 0; i < userStudyList.size(); i++){
             if(userStudyList.get(i).equals(maps.get(position).getSub6())){
-                holder.tv7.setTextColor(Color.rgb(0, 255, 0));
-                holder.iv7.setImageResource(R.drawable.circle_green);
+                holder.tv7.setTextColor(Color.rgb(3, 153, 58));
+                holder.iv7.setImageResource(R.drawable.circle_darkgreen);
             }
         }
         for(int i = 0; i < userStudyList.size(); i++){
             if(userStudyList.get(i).equals(maps.get(position).getSub7())){
-                holder.tv8.setTextColor(Color.rgb(0, 255, 0));
-                holder.iv8.setImageResource(R.drawable.circle_green);
+                holder.tv8.setTextColor(Color.rgb(3, 153, 58));
+                holder.iv8.setImageResource(R.drawable.circle_darkgreen);
             }
         }
         for(int i = 0; i < userStudyList.size(); i++){
             if(userStudyList.get(i).equals(maps.get(position).getSub8())){
-                holder.tv9.setTextColor(Color.rgb(0, 255, 0));
-                holder.iv9.setImageResource(R.drawable.circle_green);
+                holder.tv9.setTextColor(Color.rgb(3, 153, 58));
+                holder.iv9.setImageResource(R.drawable.circle_darkgreen);
             }
         }
         for(int i = 0; i < userStudyList.size(); i++){
             if(userStudyList.get(i).equals(maps.get(position).getSub9())){
-                holder.tv10.setTextColor(Color.rgb(0, 255, 0));
-                holder.iv10.setImageResource(R.drawable.circle_green);
+                holder.tv10.setTextColor(Color.rgb(3, 153, 58));
+                holder.iv10.setImageResource(R.drawable.circle_darkgreen);
             }
         }
         for(int i = 0; i < userStudyList.size(); i++){
             if(userStudyList.get(i).equals(maps.get(position).getSub10())){
-                holder.tv11.setTextColor(Color.rgb(0, 255, 0));
-                holder.iv11.setImageResource(R.drawable.circle_green);
+                holder.tv11.setTextColor(Color.rgb(3, 153, 58));
+                holder.iv11.setImageResource(R.drawable.circle_darkgreen);
             }
         }
     }
