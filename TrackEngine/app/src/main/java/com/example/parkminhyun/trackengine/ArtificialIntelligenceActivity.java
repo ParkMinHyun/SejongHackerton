@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +19,10 @@ public class ArtificialIntelligenceActivity extends AppCompatActivity {
     ImageView multiMediaProgrammingImageView, ArtificialIntelligenceImageView, dataBaseProgrammingImageView,
             dataAnalysisImageView,machineLearningImageView,imageProcessingImageView,patternRecognitionImageView,
             computerVisionSystemImageView,intelligentSystemImageView;
+
+    TextView multiMediaProgrammingTextView, ArtificialIntelligenceTextView, dataBaseProgrammingTextView,
+            dataAnalysisTextView,machineLearningTextView,imageProcessingTextView,patternRecognitionTextView,
+            computerVisionSystemTextView,intelligentSystemTextView;
 
     ImageView titleBarImage;
 
@@ -54,6 +59,16 @@ public class ArtificialIntelligenceActivity extends AppCompatActivity {
         computerVisionSystemImageView = (ImageView)findViewById(R.id.computerVisionSystemImageView);
         intelligentSystemImageView = (ImageView)findViewById(R.id.intelligentSystemImageView);
 
+        multiMediaProgrammingTextView = (TextView) findViewById(R.id.multiMediaProgrammingTextView);
+        ArtificialIntelligenceTextView = (TextView)findViewById(R.id.ArtificialIntelligenceTextView);
+        dataBaseProgrammingTextView = (TextView)findViewById(R.id.dataBaseProgrammingTextView);
+        dataAnalysisTextView = (TextView)findViewById(R.id.dataAnalysisTextView);
+        machineLearningTextView = (TextView)findViewById(R.id.machineLearningTextView);
+        imageProcessingTextView = (TextView)findViewById(R.id.imageProcessingTextView);
+        patternRecognitionTextView = (TextView)findViewById(R.id.patternRecognitionTextView);
+        computerVisionSystemTextView = (TextView)findViewById(R.id.computerVisionSystemTextView);
+        intelligentSystemTextView = (TextView)findViewById(R.id.intelligentSystemTextView);
+
         subjects = new ArrayList<>();
         userStudyData = new UserStudyData(this);
         List<String> userStudy = userStudyData.loadStudyDataList();
@@ -61,23 +76,32 @@ public class ArtificialIntelligenceActivity extends AppCompatActivity {
         for(int i=0; i< userStudy.size(); i++){
             switch (userStudy.get(i).toString()){
                 case "멀티미디어 프로그래밍" :
-                    multiMediaProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    multiMediaProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    multiMediaProgrammingTextView.setTextColor(Color.BLACK);break;
                 case "인공지능" :
-                    ArtificialIntelligenceImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    ArtificialIntelligenceImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    ArtificialIntelligenceTextView.setTextColor(Color.BLACK);break;
                 case "데이터베이스 프로그래밍" :
-                    dataBaseProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    dataBaseProgrammingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    dataBaseProgrammingTextView.setTextColor(Color.BLACK); break;
                 case "데이터 분석" :
-                    dataAnalysisImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    dataAnalysisImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    dataAnalysisTextView.setTextColor(Color.BLACK); break;
                 case "기계학습" :
-                    machineLearningImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    machineLearningImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    machineLearningTextView.setTextColor(Color.BLACK);break;
                 case "영상처리" :
-                    imageProcessingImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    imageProcessingImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    imageProcessingTextView.setTextColor(Color.BLACK); break;
                 case "패턴 인식" :
-                    patternRecognitionImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    patternRecognitionImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    patternRecognitionTextView.setTextColor(Color.BLACK); break;
                 case "컴퓨터 비전 시스템" :
-                    computerVisionSystemImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    computerVisionSystemImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    computerVisionSystemTextView.setTextColor(Color.BLACK); break;
                 case "지능형 시스템" :
-                    intelligentSystemImageView.setBackgroundColor(Color.rgb(52, 152, 219)); break;
+                    intelligentSystemImageView.setBackgroundColor(Color.rgb(52, 152, 219));
+                    intelligentSystemTextView.setTextColor(Color.BLACK); break;
             }
         }
     }
