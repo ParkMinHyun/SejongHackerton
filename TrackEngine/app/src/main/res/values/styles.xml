@@ -14,9 +14,6 @@
         <item name="android:layout_width">match_parent</item>
         <item name="progress_max">100</item>
         <item name="progress_current">70</item>
-        <item name="shape">
-            <corners android:radius="5dp"/>
-        </item>
         <item name="progress_unreached_color">#CCCCCC</item>
         <item name="progress_reached_color">#3498DB</item>
 
