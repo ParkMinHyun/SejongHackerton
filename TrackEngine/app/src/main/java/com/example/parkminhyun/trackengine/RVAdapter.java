@@ -34,7 +34,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ItemViewHolder> {
 
     @Override
     public ItemViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
-        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item, viewGroup, false);
+        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.main_track, viewGroup, false);
         ItemViewHolder ivh = new ItemViewHolder(v);
         return ivh;
     }
