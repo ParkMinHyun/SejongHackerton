@@ -78,11 +78,16 @@ public class RegisterStudyActivity extends AppCompatActivity {
         // Adding child data
         semester1_1 = new ArrayList<String>();
         semester1_1.add("C 프로그래밍 및 실습");
+        semester1_1.add("일반 물리학 및 실험1");
+        semester1_1.add("미적분학 및 연습1");
+        semester1_1.add("English Listening Practice 1");
 
         semester1_2 = new ArrayList<String>();
         semester1_2.add("공학설계기초");
         semester1_2.add("고급 C 프로그래밍 및 실습");
         semester1_2.add("전산개론-I");
+        semester1_2.add("공업수학1");
+        semester1_2.add("English Listening Practice 2");
 
         semester2_1 = new ArrayList<String>();
         semester2_1.add("윈도우즈 프로그래밍");
@@ -90,6 +95,7 @@ public class RegisterStudyActivity extends AppCompatActivity {
         semester2_1.add("웹프로그래밍");
         semester2_1.add("문제해결 및 실습: C++");
         semester2_1.add("자료구조 및 실습");
+        semester2_1.add("English Writing 1");
 
         semester2_2 = new ArrayList<String>();
         semester2_2.add("오픈소스 SW 개론");
@@ -98,6 +104,8 @@ public class RegisterStudyActivity extends AppCompatActivity {
         semester2_2.add("알고리즘 및 실습");
         semester2_2.add("마이크로 컴퓨터");
         semester2_2.add("컴퓨터 구조론");
+        semester2_2.add("이산 수학 및 프로그래밍");
+        semester2_2.add("English Writing 2");
 
         semester3_1 = new ArrayList<String>();
         semester3_1.add("신호 및 시스템");
@@ -109,6 +117,7 @@ public class RegisterStudyActivity extends AppCompatActivity {
         semester3_1.add("컴퓨터그래픽스");
         semester3_1.add("VHDL 프로그래밍");
         semester3_1.add("프로그래밍 언어의 개념");
+        semester3_1.add("확률 통계 및 프로그래밍");
 
         semester3_2 = new ArrayList<String>();
         semester3_2.add("통신 시스템");
@@ -121,6 +130,8 @@ public class RegisterStudyActivity extends AppCompatActivity {
         semester3_2.add("소프트웨어 공학");
         semester3_2.add("웹 기반 시스템");
         semester3_2.add("멀티미디어 데이터베이스");
+        semester3_2.add("선형 대수 및 프로그래밍");
+        semester3_2.add("Technical Writing 기초");
 
         semester4_1 = new ArrayList<String>();
         semester4_1.add("패턴 인식");

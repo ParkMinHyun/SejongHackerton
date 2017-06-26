@@ -15,6 +15,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static com.example.parkminhyun.trackengine.AccreditInfoActivity.mContextTourInfo;
@@ -45,28 +46,38 @@ public class AccreditInfoTab1_LiberalArts extends Fragment {
     private List<Item> items;
     private RecyclerView rv;
     AccreditAdapter adapter;
-    private List<Subject> subjects;
+    private List<String> subjects;
     ExpandableListAdapter expandableListAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         inflatedView = inflater.inflate(R.layout.accredit_tab, container, false);
 
-        subjects = new ArrayList<>();
+        subjects=Arrays.asList("EnglishListeningPractice1","EnglishListeningPractice2","EnglishWriting1","EnglishWriting2","TechnicalWriting기초");
+
         expandableListAdapter = new ExpandableListAdapter(getActivity());
         List<String> userStudy = expandableListAdapter.loadStudyDataList();
 
         items = new ArrayList<>();
-//        items.add(new Item("확률통계및프로그래밍"));
-//        items.add(new Item("선형대수및프로그래밍"));
-        for(int i=0; i< userStudy.size(); i++) {
-            Log.i("userStudy",userStudy.get(i).toString());
-            items.add(new Item(userStudy.get(i).toString()));
+
+        String str="";
+        boolean isMatch;
+        for(int i=0;i<subjects.size();i++)
+        {
+            isMatch=false;
+            for(int j=0;j<userStudy.size();j++)
+            {
+                str=userStudy.get(j).toString().replaceAll(" ",""); //공백 제거
+                Log.i("str==",str);
+                Log.i("subjects.get(i)==",subjects.get(i));
+                if(str.equals(subjects.get(i).toString()))
+                {
+                    isMatch=true;
+                }
+            }
+            if(isMatch==false)
+                items.add(new Item(subjects.get(i).toString()));
         }
-
-
-
-
 
         rv = (RecyclerView) inflatedView.findViewById(R.id.accredit_rv);
         rv.setHasFixedSize(true);
