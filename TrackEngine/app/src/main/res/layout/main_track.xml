@@ -5,7 +5,7 @@
     android:id="@+id/cv"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="70dp"
+    android:layout_height="85dp"
     android:layout_marginRight="15dp"
     android:layout_marginLeft="15dp"
     android:layout_marginBottom="10dp"
@@ -20,7 +20,11 @@
             android:layout_height="wrap_content"
             android:id="@+id/item_name"
             android:text="ThingName"
-            android:textSize="15sp" />
+            android:textColor="#424242"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="18sp" />
 
         <com.daimajia.numberprogressbar.NumberProgressBar
             android:id="@+id/numberbar1"

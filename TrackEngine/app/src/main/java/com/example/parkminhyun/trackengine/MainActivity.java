@@ -38,16 +38,16 @@ public class MainActivity extends AppCompatActivity {
 
         items = new ArrayList<>();
 
-        items.add(new Item("박민현"));
-        items.add(new Item("안태현"));
-        items.add(new Item("오성민"));
-        items.add(new Item("이명호"));
-        items.add(new Item("박민현"));
-        items.add(new Item("안태현"));
-        items.add(new Item("오성민"));
-        items.add(new Item("이명호"));
-        items.add(new Item("오성민"));
-        items.add(new Item("이명호"));
+        items.add(new Item("가상현실 트랙"));
+        items.add(new Item("인공지능 트랙"));
+        items.add(new Item("응용SW 트랙"));
+        items.add(new Item("HCI&VC 트랙"));
+        items.add(new Item("멀티미디어 트랙"));
+        items.add(new Item("사물인터넷 트랙"));
+        items.add(new Item("시스템응용 트랙"));
+        items.add(new Item("지능형인지 트랙"));
+        items.add(new Item("데이터 사이언스 트랙"));
+        items.add(new Item("정보보호 트랙"));
 
 
         adapter = new RVAdapter(items);

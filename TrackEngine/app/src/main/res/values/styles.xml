@@ -61,15 +61,15 @@
         <item name="android:layout_width">match_parent</item>
 
         <item name="progress_max">100</item>
-        <item name="progress_current">0</item>
+        <item name="progress_current">50</item>
 
         <item name="progress_unreached_color">#CCCCCC</item>
         <item name="progress_reached_color">#FF3D7F</item>
-        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_size">20sp</item>
         <item name="progress_text_color">#FF3D7F</item>
 
-        <item name="progress_reached_bar_height">1.5dp</item>
-        <item name="progress_unreached_bar_height">0.75dp</item>
+        <item name="progress_reached_bar_height">7.5dp</item>
+        <item name="progress_unreached_bar_height">3dp</item>
     </style>
 
     <style name="NumberProgressBar_Warning_Red">
